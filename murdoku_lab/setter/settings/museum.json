@@ -11,13 +11,25 @@
     "The Missing Exhibit",
     "Black Tie, Red Herring",
     "Dust and Diamonds",
-    "The Last Private View"
+    "The Last Private View",
+    "Exhibit A",
+    "The Forger's Gambit",
+    "Relics and Revenge",
+    "A Private Collection",
+    "Death Among the Antiquities",
+    "The Pharaoh's Secret",
+    "Priceless",
+    "The Vanishing Curator"
   ],
   "blurbs": [
     "Champagne, speeches, and a priceless collection that someone was willing to kill for.",
     "The doors were locked at midnight. When they opened again, the guest list was one name shorter.",
     "Every artefact has a story. Tonight one of the guests became part of the collection.",
-    "A gala for the new wing, a family feud and a curator with a secret."
+    "A gala for the new wing, a family feud and a curator with a secret.",
+    "A new exhibition, a priceless jewel on loan and a guest who will not see it go home.",
+    "The lights dim for the speeches. When they come up again, one of the patrons is dead.",
+    "Every object here was stolen once. Tonight, someone stole a life.",
+    "The trustees are toasting a record donation. The donor will not live to enjoy it."
   ],
   "rooms": [
     {"name": "Great Hall", "suits": ["statue", "carpet", "flowers", "palm"], "finish": "marble", "wallpaper": "marble_wall"},

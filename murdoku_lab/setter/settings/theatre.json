@@ -11,13 +11,25 @@
     "Exit, Pursued",
     "A Tragedy in Three Acts",
     "The Show Must Go On",
-    "Last Bow"
+    "Last Bow",
+    "Final Curtain",
+    "Dress Rehearsal for Death",
+    "First Night Nerves",
+    "A Star Is Dead",
+    "Behind the Scenes",
+    "The Prompter's Secret",
+    "Encore",
+    "Murder at the Matinee"
   ],
   "blurbs": [
     "The house is full, the critics are in, and one member of the company will not take a bow.",
     "A new play, an old rivalry and a door that should have stayed locked.",
     "Everyone in the company knows their lines. Somebody also knew their cue.",
-    "Applause, encores and a final scene that was never in the script."
+    "Applause, encores and a final scene that was never in the script.",
+    "The leading lady is furious, the director is drunk, and the understudy has never looked happier.",
+    "Three acts, two intervals and one death that the audience mistook for the play.",
+    "Backstage, everyone has a motive. Out front, the audience is still applauding.",
+    "A revival of an old melodrama, and a cast with a history nobody wants revived."
   ],
   "rooms": [
     {"name": "Stage", "suits": ["chair", "table", "tree", "statue", "boulder"], "finish": "boards", "wallpaper": "curtain_red"},

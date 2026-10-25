@@ -11,13 +11,25 @@
     "The Avalanche Weekend",
     "Fondue for Eight",
     "Whiteout",
-    "The Last Lift Down"
+    "The Last Lift Down",
+    "Death at the Summit",
+    "A Killing Frost",
+    "Thin Ice",
+    "The Alpine Alibi",
+    "Cold Comfort",
+    "Snowblind",
+    "After the Last Run",
+    "Murder Under the Mistletoe"
   ],
   "blurbs": [
     "The pass is closed, the phone line is down, and someone at the lodge has very cold blood.",
     "Eight guests, one blizzard and a weekend that nobody will ever forget.",
     "Hot chocolate, a roaring blaze and a body that went cold long before morning.",
-    "By the time the snowploughs arrive, the lodge will have one guest fewer."
+    "By the time the snowploughs arrive, the lodge will have one guest fewer.",
+    "The snow has buried the road, the lights keep flickering, and one guest is never going home.",
+    "Fresh powder on the slopes, mulled wine by the fire, and a quarrel that ended in murder.",
+    "Nobody can leave the lodge until the storm passes, and somebody is counting on it.",
+    "A ski champion, an old rival and a long night that only one of them survived."
   ],
   "rooms": [
     {"name": "Great Room", "suits": ["chair", "carpet", "register", "piano"], "finish": "planks", "wallpaper": "log_wall"},

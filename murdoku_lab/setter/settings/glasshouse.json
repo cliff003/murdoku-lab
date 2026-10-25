@@ -11,13 +11,25 @@
     "Pruned",
     "Compost Mentis",
     "The Midsummer Bloom",
-    "Weeding Out a Killer"
+    "Weeding Out a Killer",
+    "Bed of Thorns",
+    "The Hothouse Murders",
+    "Grafted",
+    "Blooming Murder",
+    "Death in the Undergrowth",
+    "The Gardener's Revenge",
+    "Under Glass",
+    "Seeds of Doubt"
   ],
   "blurbs": [
     "The rarest bloom in the country is about to open, and someone will not live to see it.",
     "Tea on the lawn, prizes for the best marrow and a guest who never came back from the greenhouses.",
     "Everything here is carefully cultivated, including a grudge that has been growing for years.",
-    "Beautiful, rare and occasionally poisonous: the plants are not the only dangerous things on the estate."
+    "Beautiful, rare and occasionally poisonous: the plants are not the only dangerous things on the estate.",
+    "The judges are tasting the jam, the band is playing, and one exhibitor has been pruned for good.",
+    "Under all that glass the air is warm, still and heavy with secrets.",
+    "A prize-winning hybrid, a stolen cutting and a rivalry that finally bore fruit.",
+    "The estate is famous for its rare specimens. Tonight it gains one more."
   ],
   "rooms": [
     {"name": "Palm House", "suits": ["palm", "tree", "plant", "statue"], "finish": "terracotta", "wallpaper": "glass_pane"},

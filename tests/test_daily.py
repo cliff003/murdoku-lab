@@ -47,16 +47,21 @@ def test_locked_days_keep_the_variety_rules(spec):
     for record in days:
         title = record["murdoku_theme"]["title"]
         by_setting.setdefault(record["setting"], []).append(title)
-    for titles in by_setting.values():
+    for setting_id, titles in by_setting.items():
         assert len(set(titles)) == len(titles)
+        assert not set(titles) & set(daily.showcase_titles(setting_id))
     letters = [d["murderer"] for d in days]
     assert all(a != b for a, b in zip(letters, letters[1:]))
+    victims = [d["victim"] for d in days]
+    assert all(v not in victims[max(0, i - 5) : i] for i, v in enumerate(victims))
+    dates = [daily.dt.date.fromisoformat(d["date"]) for d in days]
+    assert all((b - a).days == 1 for a, b in zip(dates, dates[1:]))
     published = export_queries.daily_published()
     from murdoku_lab.core.instance import Case
 
-    assert all(
-        Case.from_json(d["murdoku_case"]).content_hash() in published for d in days
-    )
+    cases = [Case.from_json(d["murdoku_case"]) for d in days]
+    assert len({daily._layout(c) for c in cases}) == len(cases)
+    assert all(c.content_hash() in published for c in cases)
 
 
 def test_build_writes_sealed_bundles_and_preview_pages(spec, tmp_path):
@@ -74,3 +79,32 @@ def test_build_writes_sealed_bundles_and_preview_pages(spec, tmp_path):
     page = (tmp_path / "d" / str(first["n"]) / "index.html").read_text()
     assert f"https://example.org/play/og/{first['n']}.png" in page
     assert (tmp_path / "og" / f"{first['n']}.png").read_bytes().startswith(b"\x89PNG")
+
+
+def test_lock_tops_up_an_empty_day_and_never_leaves_a_gap(spec, tmp_path, monkeypatch):
+    days = daily.locked_days(spec)
+    if len(days) < 3:
+        pytest.skip("needs three locked daily cases")
+    rows = [json.dumps({"murdoku_case": d["murdoku_case"]}) + "\n" for d in days[:3]]
+    monkeypatch.setattr(daily, "ROOT", tmp_path)
+    trial = {**spec, "season": "trial"}
+    first, empty, third = (d["date"] for d in daily.plan(trial, 3))
+    (tmp_path / "content" / "daily" / "trial" / "candidates").mkdir(parents=True)
+    daily._candidates_path(trial, first).write_text(rows[0])
+    daily._candidates_path(trial, empty).write_text("")
+    daily._candidates_path(trial, third).write_text(rows[2])
+
+    farmed = []
+    monkeypatch.setattr(daily, "_farm", lambda day, seed, count, path, workers=6: None)
+    assert list(daily.lock(trial, 3)) == [
+        first
+    ]  # the third day waits for the empty one
+
+    def farm(day, seed, count, path, workers=6):
+        farmed.append(day["date"])
+        with path.open("a") as out:
+            out.write(rows[1])
+
+    monkeypatch.setattr(daily, "_farm", farm)
+    assert sorted(daily.lock(trial, 3)) == [first, empty, third]
+    assert farmed == [empty]

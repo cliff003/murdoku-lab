@@ -76,14 +76,16 @@ A locked day can be played as it will ship with the local release and `?date=` o
 **pick** records a reviewer's choice in `picks.json`. Without a pick, `lock` takes the first
 candidate that keeps the variety rules.
 
-**lock** dresses and freezes every planned day that has candidates and no lock yet. Earlier
-locks never change. For each day it:
+**lock** dresses and freezes, in date order, every planned day that has been generated and
+has no lock yet. Earlier locks never change, and it stops at the first day it cannot fill,
+so the locked days never leave a gap. For each day it:
 
 1. keeps to the variety rules: a room layout not used earlier in the season, and a
-   murderer letter different from yesterday's. When no candidate fits, it farms two more
-   from further seeds, up to three times;
-2. dresses the case in the day's setting, preferring a title that setting has not used yet
-   and a victim who has not appeared in the last five days;
+   murderer letter different from yesterday's. When no candidate fits, or the day came out
+   with none, it farms two more from further seeds, up to three times;
+2. dresses the case in the day's setting, preferring a title that neither an earlier daily
+   case nor the frozen showcase (`content/showcase/`) uses for that setting, and a victim who
+   has not appeared in the last five days;
 3. writes `days/<date>.json` (case and theme), adds the candidate, seed, dressing salt,
    content hash, git revision and OR-Tools version to `lock.json`, and registers the
    content hash in `content/daily/published.json`.
@@ -93,9 +95,9 @@ Query and dataset exports (`setter/export_queries.py`) skip every case in
 
 **status** shows each day's candidates and lock.
 
-Each pack has eight titles. A setting comes round about seven times in an eight-week
-season, and the showcase uses three more, so add titles to the packs before locking a
-whole season, or some titles will repeat.
+Each pack has sixteen titles and eight blurbs. A setting comes round about seven times in an
+eight-week season and the showcase uses three more titles, so a season fits without repeats;
+add titles before planning a longer one.
 
 **build** reads the versioned locked days and writes what the player app reads. It
 rebuilds their exported assets without generating new puzzles or re-theming the locks:
@@ -109,7 +111,8 @@ rebuilds their exported assets without generating new puzzles or re-theming the 
 | `web/public/d/<n>/index.html`           | Link-preview page with Open Graph tags; opens `?d=<n>`     |
 
 `--site-url` makes the share links and preview images absolute. The local release passes
-the address it serves on. These folders are build output and are not committed.
+the address it serves on. These folders are build output and are not committed. The same
+locked days always build to byte-identical files.
 
 ## In the player
 
@@ -150,7 +153,7 @@ npm run release:local                       # http://127.0.0.1:4173/
 
 The script's `prepare_assets()` function is also used by `scripts/build_play.py`. Each
 default build prepares the full 30-case library (24 themed bundles from
-`content/showcase/player-bundles.jsonl`, five classics and one training case), the 14
+`content/showcase/player-bundles.jsonl`, five classics and one training case), the 50
 locked daily cases with share links for the chosen address, the brand assets and a
 design-token check. It reads versioned release content without requiring
 `outputs/showcase/`, generating new puzzles or re-theming the frozen cases.

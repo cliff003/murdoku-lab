@@ -11,13 +11,25 @@
     "The Missing Manuscript",
     "Final Examination",
     "Footnotes to a Murder",
-    "Out of Print"
+    "Out of Print",
+    "Michaelmas Murder",
+    "The Silent Fellow",
+    "Marginalia",
+    "An Unfinished Thesis",
+    "Dead Languages",
+    "The Last Lecture",
+    "Ex Libris",
+    "A Matter of Record"
   ],
   "blurbs": [
     "The end of term, a priceless manuscript and a fellow who will not be returning next year.",
     "The bell has rung for dinner. One scholar is still among the books, and will be for ever.",
     "Centuries of learning, a college at war with itself and one very final examination.",
-    "Quiet, please. Somebody in this college is about to get away with murder."
+    "Quiet, please. Somebody in this college is about to get away with murder.",
+    "Exams are over, the punts are out, and one tutor has marked a last paper.",
+    "Somewhere in the college a rare first edition has vanished, and so has a fellow.",
+    "Candlelight at high table, gossip over port and a death that nobody can explain.",
+    "Every scholar here has a theory. Only one of them knows what really happened."
   ],
   "rooms": [
     {"name": "Reading Room", "suits": ["table", "chair", "shelf", "carpet"], "finish": "parquet", "wallpaper": "book_wall"},

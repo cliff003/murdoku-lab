@@ -14,9 +14,11 @@ within a week. Each day gets a few candidates from the constraint-first farm wit
 from sha256("murdoku/daily/v1/<date>/<j>"), so a day can always be regenerated. Locking picks a
 candidate (the reviewer's pick, or the first that keeps the variety rules: a new room layout and
 not yesterday's murderer letter, farming a few more candidates when none does), dresses it in the
-day's setting (preferring a title the setting has not used yet and a victim not seen in the last
-five days) and records the candidate, seed, git revision and solver version. Locked cases are listed in
-content/daily/published.json so dataset exports can leave them out.
+day's setting (preferring a title that neither an earlier daily case nor the frozen showcase
+uses for the setting, and a victim not seen in the last five days) and records the candidate,
+seed, git revision and solver version. Locking stops at the first day it cannot fill, so locked
+days never leave a gap. Locked cases are listed in content/daily/published.json so dataset
+exports can leave them out.
 """
 
 from __future__ import annotations
@@ -210,6 +212,19 @@ def _layout(case):
     return hashlib.sha256(json.dumps(case.scene.area_of).encode()).hexdigest()[:16]
 
 
+SHOWCASE = ROOT / "content" / "showcase" / "player-bundles.jsonl"
+
+
+def showcase_titles(setting_id):
+    """Titles the frozen player showcase uses for one setting."""
+    if not SHOWCASE.is_file():
+        return []
+    rows = (json.loads(line) for line in SHOWCASE.read_text().splitlines() if line)
+    return [
+        r["meta"]["title"] for r in rows if r["meta"]["setting"]["id"] == setting_id
+    ]
+
+
 def lock(spec, days=None):
     """Pick, dress and lock every planned day with candidates; earlier locks stay as they are."""
     from murdoku_lab.setter import settings
@@ -246,9 +261,10 @@ def lock(spec, days=None):
         date = day["date"]
         if date in locks:
             continue
+        # Lock an unbroken run of days: stop at the first day that has not been generated.
+        if not _candidates_path(spec, date).exists():
+            break
         pool = candidates(spec, date)
-        if not pool:
-            continue
         # Six Vanes take turns as victims, so "no repeat within five days" is always possible.
         recent = history[-5:]
         layouts = {h[1] for h in history}
@@ -258,7 +274,7 @@ def lock(spec, days=None):
             yesterday = history[-1][2] if history else None
             return _layout(case) not in layouts and letter != yesterday
 
-        # Top a day up from further seeds when none of its candidates keeps the variety rules.
+        # Top a day up from further seeds when it has no candidate that keeps the variety rules.
         for extra in range(1, 4):
             if any(fits(c) for c in pool) or date in picks:
                 break
@@ -269,21 +285,35 @@ def lock(spec, days=None):
                 _candidates_path(spec, date),
             )
             pool = candidates(spec, date)
+        if not pool:
+            print(
+                f"no candidates for {date} after top-ups; farm more before locking it"
+            )
+            break
         order = list(range(len(pool)))
         if date in picks:
             order = [picks[date]] + [i for i in order if i != picks[date]]
         j = next((i for i in order if fits(pool[i])), order[0])
         case = pool[j]
         victims = {h[3] for h in recent}
-        used_titles = set()
+        # Titles already on the site: earlier daily cases and the frozen showcase.
+        used_titles = set(showcase_titles(day["setting"]))
         for earlier in sorted(locks):
             previous = json.loads((days_dir / f"{earlier}.json").read_text())
             if previous["setting"] == day["setting"]:
                 used_titles.add(Theme.from_json(previous["murdoku_theme"]).title)
+        # Late in a season only one Vane in six and a few titles may be left, so try salts
+        # until both a fresh title and a fresh victim turn up.
         dressings = []
-        for attempt in range(40):
+        for attempt in range(200):
             salt = date if attempt == 0 else f"{date}#{attempt}"
-            dressings.append((salt, settings.dress(case, day["setting"], salt=salt)))
+            theme = settings.dress(case, day["setting"], salt=salt)
+            dressings.append((salt, theme))
+            if (
+                theme.title not in used_titles
+                and theme.name(case.victim) not in victims
+            ):
+                break
         fresh = [d for d in dressings if d[1].title not in used_titles]
         best = [d for d in fresh if d[1].name(case.victim) not in victims]
         salt, theme = (best or fresh or dressings)[0]
@@ -461,7 +491,8 @@ def _og_page(directory, n, theme, pack, record, site_url):
     canonical = (
         f'<link rel="canonical" href="{escape(site_url)}d/{n}/">'
         f'<meta property="og:url" content="{escape(site_url)}d/{n}/">'
-        if site_url else ""
+        if site_url
+        else ""
     )
     (directory / "index.html").write_text(
         '<!doctype html><html lang="en"><head><meta charset="utf-8">'

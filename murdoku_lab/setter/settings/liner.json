@@ -11,13 +11,25 @@
     "One Passenger Short",
     "The Purser's Ledger",
     "Fog off the Grand Banks",
-    "Last Dance Before Landfall"
+    "Last Dance Before Landfall",
+    "Man Overboard",
+    "All Ashore",
+    "The Atlantic Affair",
+    "Murder at Sea",
+    "A Berth for the Dead",
+    "Steaming into Danger",
+    "The Fourth Funnel",
+    "Rough Waters"
   ],
   "blurbs": [
     "Five days at sea, a famous family aboard, and one passenger who will not reach port.",
     "Champagne on the upper deck, fog on the water, and a scream that nobody admits to hearing.",
     "The orchestra kept playing. The stewards kept pouring. Somebody kept a secret all the way across the ocean.",
-    "A maiden voyage, a fortune in the purser's safe and a guest list that did not add up."
+    "A maiden voyage, a fortune in the purser's safe and a guest list that did not add up.",
+    "Halfway across the ocean, the band strikes up a waltz and one dancer never returns to the floor.",
+    "First class, second chances and a passenger list with one name too many.",
+    "The whistle sounds at dawn. By then, the killer hopes to be ashore.",
+    "An heiress, a card sharp and a stowaway: someone aboard is not who they claim to be."
   ],
   "rooms": [
     {"name": "Grand Saloon", "suits": ["chair", "piano", "carpet", "flowers", "palm"], "finish": "marble", "wallpaper": "deco_gold"},

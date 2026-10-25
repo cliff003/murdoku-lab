@@ -11,13 +11,25 @@
     "One Way Only",
     "The Night Express",
     "Change at Vienna",
-    "End of the Line"
+    "End of the Line",
+    "Death Takes the Sleeper",
+    "The Orient Connection",
+    "Night Train to Nowhere",
+    "Fare Dodger",
+    "The Final Destination",
+    "Running Late",
+    "Delayed by Murder",
+    "The Wrong Platform"
   ],
   "blurbs": [
     "Eight passengers, one locked train and a long night with no stations.",
     "The train departed on time. Somewhere between two countries, one passenger stopped breathing.",
     "Snow on the tracks, candles at supper and a secret in every compartment.",
-    "Nobody gets off until morning, which is exactly what the killer was counting on."
+    "Nobody gets off until morning, which is exactly what the killer was counting on.",
+    "The border guards are asleep, the tea has gone cold and one compartment has gone very quiet.",
+    "A diplomat, a jewel thief and a honeymooning couple: only some of them are what they seem.",
+    "The train is running late, and one passenger has missed every stop since midnight.",
+    "Between the mountains and the sea, the express makes no stops and keeps one terrible secret."
   ],
   "rooms": [
     {"name": "Dining Car", "suits": ["table", "chair", "flowers"], "finish": "carpet", "wallpaper": "walnut_panels"},

@@ -11,13 +11,25 @@
     "Dust on the Keys",
     "Secrets in the Silver Drawer",
     "The Long Weekend",
-    "Supper for Eight, Seven Remaining"
+    "Supper for Eight, Seven Remaining",
+    "The Alderwick Affair",
+    "Murder at the Manor",
+    "A Family Matter",
+    "The Uninvited Guest",
+    "Dinner Is Served",
+    "Port and Poison",
+    "The Black Sheep",
+    "Heir Apparent"
   ],
   "blurbs": [
     "A country house, a reading of the will, and one guest who never came down to supper.",
     "Rain against the windows, a fire in every grate, and a family that cannot agree on anything.",
     "Everyone came for the anniversary. Someone came for something else.",
-    "The clocks were wound, the silver polished, and by morning the house had a new heir."
+    "The clocks were wound, the silver polished, and by morning the house had a new heir.",
+    "The family has gathered for a birthday. By the end of the evening, it has one member fewer.",
+    "Fog over the lawns, a cold supper and a butler who saw more than anyone should.",
+    "An old feud, a new will and a long night when every door in the house was locked.",
+    "The guests dressed for dinner. One of them dressed for murder."
   ],
   "rooms": [
     {"name": "Library", "suits": ["shelf", "chair", "register", "carpet"], "finish": "parquet", "wallpaper": "panel_wood"},
