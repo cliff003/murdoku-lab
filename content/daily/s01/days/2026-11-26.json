@@ -1,0 +1,690 @@
+{
+ "schema": "murdoku.daily_case/1",
+ "date": "2026-11-26",
+ "n": 46,
+ "weekday": "thursday",
+ "size": 7,
+ "band": "hard",
+ "special": null,
+ "setting": "liner",
+ "murderer": "F",
+ "victim": "Valentina Vane",
+ "murdoku_case": {
+  "schema": "murdoku.case/1",
+  "id": "b7cc9748c4586bb3",
+  "variant": "classic",
+  "scene": {
+   "W": 7,
+   "H": 7,
+   "area_of": [
+    1,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    1,
+    1,
+    0,
+    0,
+    0,
+    0,
+    2,
+    2,
+    0,
+    0,
+    0,
+    0,
+    0,
+    2,
+    2,
+    0,
+    0,
+    0,
+    0,
+    0,
+    2,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    2,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    2,
+    2,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "obj_of": [
+    null,
+    "statue",
+    null,
+    "bear",
+    "flowers",
+    null,
+    null,
+    null,
+    "car",
+    "car",
+    null,
+    "chair",
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    "barrel",
+    null,
+    null,
+    "piano",
+    null,
+    null,
+    "chair",
+    "boulder",
+    null,
+    null,
+    "statue",
+    null,
+    "car",
+    null,
+    null,
+    null,
+    null,
+    "chair",
+    null,
+    "car",
+    "palm",
+    "tv",
+    null,
+    null
+   ],
+   "props": [
+    {
+     "pid": "barrel",
+     "standable": false,
+     "cells": [
+      25
+     ],
+     "landmark": true
+    },
+    {
+     "pid": "bear",
+     "standable": false,
+     "cells": [
+      3
+     ],
+     "landmark": false
+    },
+    {
+     "pid": "boulder",
+     "standable": false,
+     "cells": [
+      32
+     ],
+     "landmark": true
+    },
+    {
+     "pid": "car",
+     "standable": true,
+     "cells": [
+      8,
+      9,
+      37,
+      44
+     ],
+     "landmark": false
+    },
+    {
+     "pid": "chair",
+     "standable": true,
+     "cells": [
+      11,
+      31,
+      42
+     ],
+     "landmark": false
+    },
+    {
+     "pid": "flowers",
+     "standable": false,
+     "cells": [
+      4
+     ],
+     "landmark": false
+    },
+    {
+     "pid": "palm",
+     "standable": false,
+     "cells": [
+      45
+     ],
+     "landmark": false
+    },
+    {
+     "pid": "piano",
+     "standable": false,
+     "cells": [
+      28
+     ],
+     "landmark": true
+    },
+    {
+     "pid": "statue",
+     "standable": false,
+     "cells": [
+      1,
+      35
+     ],
+     "landmark": true
+    },
+    {
+     "pid": "tv",
+     "standable": false,
+     "cells": [
+      46
+     ],
+     "landmark": false
+    }
+   ],
+   "terrain_of": [
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor"
+   ],
+   "allow_disconnected_areas": false,
+   "doors": [
+    [
+     2,
+     9
+    ],
+    [
+     22,
+     29
+    ]
+   ]
+  },
+  "characters": [
+   "A",
+   "B",
+   "C",
+   "D",
+   "E",
+   "F",
+   "V"
+  ],
+  "victim": "V",
+  "tags": {},
+  "clues": [
+   {
+    "atoms": [
+     {
+      "kind": "beside",
+      "holder": "C",
+      "args": [
+       "tv"
+      ]
+     },
+     {
+      "kind": "other_beside",
+      "holder": "C",
+      "args": [
+       "palm"
+      ]
+     }
+    ]
+   },
+   {
+    "atoms": [
+     {
+      "kind": "only_on",
+      "holder": "A",
+      "args": [
+       "chair"
+      ]
+     }
+    ]
+   },
+   {
+    "atoms": [
+     {
+      "kind": "col_offset",
+      "holder": "B",
+      "args": [
+       "D",
+       3
+      ]
+     },
+     {
+      "kind": "beside",
+      "holder": "B",
+      "args": [
+       "flowers"
+      ]
+     }
+    ]
+   },
+   {
+    "atoms": [
+     {
+      "kind": "row_offset",
+      "holder": "E",
+      "args": [
+       "F",
+       -1
+      ]
+     },
+     {
+      "kind": "in_area",
+      "holder": "E",
+      "args": [
+       0
+      ]
+     }
+    ]
+   },
+   {
+    "atoms": [
+     {
+      "kind": "in_corner",
+      "holder": "V",
+      "args": []
+     },
+     {
+      "kind": "not_in_area",
+      "holder": "V",
+      "args": [
+       1
+      ]
+     }
+    ]
+   },
+   {
+    "atoms": [
+     {
+      "kind": "in_corner",
+      "holder": "F",
+      "args": []
+     }
+    ]
+   }
+  ],
+  "solution": {
+   "A": 31,
+   "B": 5,
+   "C": 39,
+   "D": 44,
+   "E": 13,
+   "F": 14,
+   "V": 22
+  },
+  "answer": "murderer",
+  "answer_key": "F",
+  "theme_id": null,
+  "seed": 40770461,
+  "target_band": "hard",
+  "certificate": {
+   "solved": true,
+   "depth": 21,
+   "tier_max": 3,
+   "tier_hist": {
+    "1": 11,
+    "2": 4,
+    "3": 6
+   },
+   "advanced": 6,
+   "cost": 49.0,
+   "max_width": 104,
+   "guess_free": true,
+   "place_order": [
+    "B",
+    "C",
+    "D",
+    "A",
+    "E",
+    "V",
+    "F"
+   ],
+   "bottleneck": {
+    "kind": "xblock",
+    "tier": 3,
+    "text": "E cannot be at r3c3: that would leave D with no square at all.",
+    "removed": 1
+   },
+   "steps": [
+    {
+     "kind": "setup",
+     "tier": 1,
+     "text": "Mark the cells each clue allows. 9 cell(s) are unusable (a table, shelf, plant or the like stands there); 104 candidate placements remain across 7 people.",
+     "removed": 0
+    },
+    {
+     "kind": "exclusive",
+     "tier": 1,
+     "text": "A was the only person on a chair — every other person is wiped off those 3 square(s) (8 candidate(s) cleared).",
+     "removed": 8
+    },
+    {
+     "kind": "single",
+     "tier": 1,
+     "text": "Only one square is still possible for B: r1c6. Row 1 and column 6 are now closed to everyone else.",
+     "removed": 25,
+     "placed": [
+      "B",
+      5
+     ]
+    },
+    {
+     "kind": "single",
+     "tier": 1,
+     "text": "Only one square is still possible for C: r6c5. Row 6 and column 5 are now closed to everyone else.",
+     "removed": 15,
+     "placed": [
+      "C",
+      39
+     ]
+    },
+    {
+     "kind": "relational",
+     "tier": 2,
+     "text": "Cross-checking the clue linking B and D (col_offset) removes 16 candidate(s).",
+     "removed": 16
+    },
+    {
+     "kind": "relational",
+     "tier": 2,
+     "text": "Cross-checking the clue linking E and F (row_offset) removes 10 candidate(s).",
+     "removed": 10
+    },
+    {
+     "kind": "xblock",
+     "tier": 3,
+     "text": "E cannot be at r3c3: that would leave D with no square at all.",
+     "removed": 1
+    },
+    {
+     "kind": "xblock",
+     "tier": 3,
+     "text": "E cannot be at r4c3: that would leave D with no square at all.",
+     "removed": 1
+    },
+    {
+     "kind": "xblock",
+     "tier": 3,
+     "text": "F cannot be at r3c3: that would leave D with no square at all.",
+     "removed": 1
+    },
+    {
+     "kind": "xblock",
+     "tier": 3,
+     "text": "V cannot be at r3c2: that would leave F with no square at all.",
+     "removed": 1
+    },
+    {
+     "kind": "xblock",
+     "tier": 3,
+     "text": "V cannot be at r3c3: that would leave D with no square at all.",
+     "removed": 1
+    },
+    {
+     "kind": "xblock",
+     "tier": 3,
+     "text": "V cannot be at r7c3: that would leave D with no square at all.",
+     "removed": 1
+    },
+    {
+     "kind": "tagshare",
+     "tier": 2,
+     "text": "C is in area 1 and only D can be the one beside a palm, so D is confined to it (4 cleared).",
+     "removed": 4
+    },
+    {
+     "kind": "single",
+     "tier": 1,
+     "text": "Only one square is still possible for D: r7c3. Row 7 and column 3 are now closed to everyone else.",
+     "removed": 3,
+     "placed": [
+      "D",
+      44
+     ]
+    },
+    {
+     "kind": "single",
+     "tier": 1,
+     "text": "Only one square is still possible for A: r5c4. Row 5 and column 4 are now closed to everyone else.",
+     "removed": 5,
+     "placed": [
+      "A",
+      31
+     ]
+    },
+    {
+     "kind": "line",
+     "tier": 1,
+     "text": "E is the only person who can be in row 2, and every row holds someone — so E is there.",
+     "removed": 2
+    },
+    {
+     "kind": "single",
+     "tier": 1,
+     "text": "Only one square is still possible for E: r2c7. Row 2 and column 7 are now closed to everyone else.",
+     "removed": 0,
+     "placed": [
+      "E",
+      13
+     ]
+    },
+    {
+     "kind": "relational",
+     "tier": 2,
+     "text": "Cross-checking the clue linking E and F (row_offset) removes 1 candidate(s).",
+     "removed": 1
+    },
+    {
+     "kind": "line",
+     "tier": 1,
+     "text": "V is the only person who can be in row 4, and every row holds someone — so V is there.",
+     "removed": 1
+    },
+    {
+     "kind": "single",
+     "tier": 1,
+     "text": "Only one square is still possible for V: r4c2. Row 4 and column 2 are now closed to everyone else.",
+     "removed": 1,
+     "placed": [
+      "V",
+      22
+     ]
+    },
+    {
+     "kind": "verdict",
+     "tier": 1,
+     "text": "F is at r3c1.",
+     "removed": 0,
+     "placed": [
+      "F",
+      14
+     ]
+    }
+   ]
+  },
+  "meta": {
+   "quality_version": "scene-design-v1",
+   "implied_atoms_removed": 0,
+   "scene_spec": {
+    "schema": "murdoku.scene_spec/1",
+    "anchors_per_area": {},
+    "blocker_rate": 0.2,
+    "furniture_rate": 0.16
+   }
+  }
+ },
+ "murdoku_theme": {
+  "theme_id": "liner-22cecab8",
+  "title": "One Passenger Short",
+  "names": {
+   "A": "Ada Ashworth",
+   "B": "Basil Blackwood",
+   "C": "Cleo Carrow",
+   "D": "Dorian Dale",
+   "E": "Esme Elwood",
+   "F": "Felix Fairweather",
+   "V": "Valentina Vane"
+  },
+  "pronouns": {
+   "A": "she",
+   "B": "he",
+   "C": "she",
+   "D": "he",
+   "E": "she",
+   "F": "he",
+   "V": "she"
+  },
+  "areas": [
+   "Boat Deck",
+   "Cargo Hold",
+   "Grand Saloon"
+  ],
+  "objects": {
+   "chair": "deck chair",
+   "car": "lifeboat",
+   "tv": "ship's telegraph",
+   "flowers": "flower arrangement",
+   "palm": "potted palm",
+   "bear": "life ring",
+   "statue": "figurehead",
+   "piano": "piano",
+   "boulder": "anchor",
+   "barrel": "coil of rope"
+  },
+  "tags": {},
+  "victim_note": "was found dead",
+  "blurb": "Champagne on the upper deck, fog on the water, and a scream that nobody admits to hearing.",
+  "assets": {},
+  "setting_id": "liner",
+  "visual": {
+   "accent": "#1e5a7a",
+   "finishes": [
+    "deck",
+    "planks",
+    "marble",
+    "herringbone",
+    "parquet",
+    "carpet",
+    "checker",
+    "boards",
+    "paving",
+    "terrazzo"
+   ],
+   "wallpapers": [
+    "portholes",
+    "deco_gold",
+    "bulkhead",
+    "sea_rail"
+   ],
+   "variants": {
+    "carpet": [
+     "navy",
+     "teal"
+    ],
+    "checker": [
+     "blue",
+     "noir"
+    ],
+    "planks": [
+     "oak",
+     "ash"
+    ]
+   },
+   "frame": "liner",
+   "skins": {
+    "bed": "bunk",
+    "chair": "deck_chair",
+    "car": "lifeboat",
+    "tv": "ship_telegraph",
+    "crate": "steamer_trunk",
+    "register": "wireless_set",
+    "bear": "life_ring",
+    "statue": "figurehead",
+    "boulder": "anchor",
+    "barrel": "rope_coil"
+   },
+   "setting": "liner",
+   "area_finishes": {
+    "0": "deck",
+    "1": "boards",
+    "2": "marble"
+   },
+   "area_wallpapers": {
+    "0": "sea_rail",
+    "1": "bulkhead",
+    "2": "deco_gold"
+   }
+  }
+ }
+}

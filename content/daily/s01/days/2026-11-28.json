@@ -1,0 +1,756 @@
+{
+ "schema": "murdoku.daily_case/1",
+ "date": "2026-11-28",
+ "n": 48,
+ "weekday": "saturday",
+ "size": 8,
+ "band": "medium",
+ "special": null,
+ "setting": "theatre",
+ "murderer": "B",
+ "victim": "Vera Vane",
+ "murdoku_case": {
+  "schema": "murdoku.case/1",
+  "id": "c25acf63e939dd54",
+  "variant": "classic",
+  "scene": {
+   "W": 8,
+   "H": 8,
+   "area_of": [
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    4,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    4,
+    4,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    4,
+    4,
+    1,
+    1,
+    1,
+    1,
+    2,
+    0,
+    0,
+    4,
+    1,
+    1,
+    1,
+    2,
+    2,
+    2,
+    0,
+    0,
+    1,
+    1,
+    1,
+    2,
+    2,
+    2,
+    2,
+    0,
+    1,
+    1,
+    1,
+    2,
+    2,
+    2,
+    0,
+    0,
+    1,
+    1,
+    1,
+    2,
+    2,
+    2,
+    0,
+    0
+   ],
+   "obj_of": [
+    null,
+    null,
+    null,
+    "car",
+    "car",
+    null,
+    "palm",
+    null,
+    null,
+    null,
+    null,
+    "statue",
+    "bed",
+    null,
+    "barrel",
+    "car",
+    null,
+    null,
+    null,
+    "barrel",
+    null,
+    null,
+    null,
+    "car",
+    null,
+    "chair",
+    "palm",
+    null,
+    null,
+    null,
+    "chair",
+    null,
+    "barrel",
+    "car",
+    null,
+    null,
+    null,
+    null,
+    "crate",
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    "tv",
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    "carpet",
+    "boulder",
+    null,
+    null,
+    "register",
+    null,
+    "statue",
+    "boulder",
+    "carpet",
+    null,
+    null
+   ],
+   "props": [
+    {
+     "pid": "barrel",
+     "standable": false,
+     "cells": [
+      14,
+      19,
+      32
+     ],
+     "landmark": true
+    },
+    {
+     "pid": "bed",
+     "standable": true,
+     "cells": [
+      12
+     ],
+     "landmark": false
+    },
+    {
+     "pid": "boulder",
+     "standable": false,
+     "cells": [
+      54,
+      60
+     ],
+     "landmark": true
+    },
+    {
+     "pid": "car",
+     "standable": true,
+     "cells": [
+      3,
+      4,
+      15,
+      23,
+      33
+     ],
+     "landmark": false
+    },
+    {
+     "pid": "carpet",
+     "standable": true,
+     "cells": [
+      53,
+      61
+     ],
+     "landmark": false
+    },
+    {
+     "pid": "chair",
+     "standable": true,
+     "cells": [
+      25,
+      30
+     ],
+     "landmark": false
+    },
+    {
+     "pid": "crate",
+     "standable": false,
+     "cells": [
+      38
+     ],
+     "landmark": false
+    },
+    {
+     "pid": "palm",
+     "standable": false,
+     "cells": [
+      6,
+      26
+     ],
+     "landmark": false
+    },
+    {
+     "pid": "register",
+     "standable": false,
+     "cells": [
+      57
+     ],
+     "landmark": false
+    },
+    {
+     "pid": "statue",
+     "standable": false,
+     "cells": [
+      11,
+      59
+     ],
+     "landmark": true
+    },
+    {
+     "pid": "tv",
+     "standable": false,
+     "cells": [
+      46
+     ],
+     "landmark": false
+    }
+   ],
+   "terrain_of": [
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor"
+   ],
+   "allow_disconnected_areas": false,
+   "doors": [
+    [
+     16,
+     24
+    ],
+    [
+     20,
+     28
+    ],
+    [
+     21,
+     22
+    ],
+    [
+     21,
+     29
+    ],
+    [
+     61,
+     62
+    ]
+   ]
+  },
+  "characters": [
+   "A",
+   "B",
+   "C",
+   "D",
+   "E",
+   "F",
+   "G",
+   "V"
+  ],
+  "victim": "V",
+  "tags": {},
+  "clues": [
+   {
+    "atoms": [
+     {
+      "kind": "in_corner",
+      "holder": "F",
+      "args": []
+     },
+     {
+      "kind": "other_beside",
+      "holder": "F",
+      "args": [
+       "tv"
+      ]
+     }
+    ]
+   },
+   {
+    "atoms": [
+     {
+      "kind": "only_beside",
+      "holder": "B",
+      "args": [
+       "palm"
+      ]
+     }
+    ]
+   },
+   {
+    "atoms": [
+     {
+      "kind": "in_corner",
+      "holder": "D",
+      "args": []
+     },
+     {
+      "kind": "in_areas",
+      "holder": "D",
+      "args": [
+       [
+        0,
+        3
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "atoms": [
+     {
+      "kind": "with",
+      "holder": "G",
+      "args": [
+       "E"
+      ]
+     }
+    ]
+   },
+   {
+    "atoms": [
+     {
+      "kind": "on",
+      "holder": "A",
+      "args": [
+       "car"
+      ]
+     }
+    ]
+   },
+   {
+    "atoms": [
+     {
+      "kind": "beside",
+      "holder": "E",
+      "args": [
+       "boulder"
+      ]
+     }
+    ]
+   },
+   {
+    "atoms": [
+     {
+      "kind": "beside",
+      "holder": "G",
+      "args": [
+       "carpet"
+      ]
+     }
+    ]
+   },
+   {
+    "atoms": [
+     {
+      "kind": "in_area",
+      "holder": "C",
+      "args": [
+       4
+      ]
+     }
+    ]
+   }
+  ],
+  "solution": {
+   "A": 15,
+   "B": 25,
+   "C": 22,
+   "D": 0,
+   "E": 52,
+   "F": 35,
+   "G": 45,
+   "V": 58
+  },
+  "answer": "murderer",
+  "answer_key": "B",
+  "theme_id": null,
+  "seed": 7804371,
+  "target_band": "medium",
+  "certificate": {
+   "solved": true,
+   "depth": 17,
+   "tier_max": 3,
+   "tier_hist": {
+    "1": 13,
+    "2": 3,
+    "3": 1
+   },
+   "advanced": 1,
+   "cost": 24.0,
+   "max_width": 101,
+   "guess_free": true,
+   "place_order": [
+    "F",
+    "B",
+    "C",
+    "A",
+    "D",
+    "G",
+    "E",
+    "V"
+   ],
+   "bottleneck": {
+    "kind": "naked_subset",
+    "tier": 3,
+    "text": "E, G are confined to columns [5, 6] — between them they use all 2, so no one else can: 21 candidate(s) cleared.",
+    "removed": 21
+   },
+   "steps": [
+    {
+     "kind": "setup",
+     "tier": 1,
+     "text": "Mark the cells each clue allows. 12 cell(s) are unusable (a table, shelf, plant or the like stands there); 101 candidate placements remain across 8 people.",
+     "removed": 0
+    },
+    {
+     "kind": "exclusive",
+     "tier": 1,
+     "text": "B was the only person beside a palm — every other person is wiped off those 4 square(s) (5 candidate(s) cleared).",
+     "removed": 5
+    },
+    {
+     "kind": "relational",
+     "tier": 2,
+     "text": "Cross-checking the clue linking G and E (with) removes 2 candidate(s).",
+     "removed": 2
+    },
+    {
+     "kind": "tagshare",
+     "tier": 2,
+     "text": "F shared an area with someone beside a tv, so areas where that is no longer possible are ruled out (14 candidate(s) cleared).",
+     "removed": 14
+    },
+    {
+     "kind": "naked_subset",
+     "tier": 3,
+     "text": "E, G are confined to columns [5, 6] — between them they use all 2, so no one else can: 21 candidate(s) cleared.",
+     "removed": 21
+    },
+    {
+     "kind": "single",
+     "tier": 1,
+     "text": "Only one square is still possible for F: r5c4. Row 5 and column 4 are now closed to everyone else.",
+     "removed": 11,
+     "placed": [
+      "F",
+      35
+     ]
+    },
+    {
+     "kind": "single",
+     "tier": 1,
+     "text": "Only one square is still possible for B: r4c2. Row 4 and column 2 are now closed to everyone else.",
+     "removed": 10,
+     "placed": [
+      "B",
+      25
+     ]
+    },
+    {
+     "kind": "line",
+     "tier": 1,
+     "text": "V is the only person who can be in column 3, and every column holds someone — so V is there.",
+     "removed": 14
+    },
+    {
+     "kind": "line",
+     "tier": 1,
+     "text": "D is the only person who can be in column 1, and every column holds someone — so D is there.",
+     "removed": 2
+    },
+    {
+     "kind": "line",
+     "tier": 1,
+     "text": "C is the only person who can be in column 7, and every column holds someone — so C is there.",
+     "removed": 3
+    },
+    {
+     "kind": "single",
+     "tier": 1,
+     "text": "Only one square is still possible for C: r3c7. Row 3 and column 7 are now closed to everyone else.",
+     "removed": 3,
+     "placed": [
+      "C",
+      22
+     ]
+    },
+    {
+     "kind": "single",
+     "tier": 1,
+     "text": "Only one square is still possible for A: r2c8. Row 2 and column 8 are now closed to everyone else.",
+     "removed": 1,
+     "placed": [
+      "A",
+      15
+     ]
+    },
+    {
+     "kind": "single",
+     "tier": 1,
+     "text": "Only one square is still possible for D: r1c1. Row 1 and column 1 are now closed to everyone else.",
+     "removed": 1,
+     "placed": [
+      "D",
+      0
+     ]
+    },
+    {
+     "kind": "tagshare",
+     "tier": 2,
+     "text": "F is in area 3 and only G can be the one beside a tv, so G is confined to it (3 cleared).",
+     "removed": 3
+    },
+    {
+     "kind": "single",
+     "tier": 1,
+     "text": "Only one square is still possible for G: r6c6. Row 6 and column 6 are now closed to everyone else.",
+     "removed": 2,
+     "placed": [
+      "G",
+      45
+     ]
+    },
+    {
+     "kind": "single",
+     "tier": 1,
+     "text": "Only one square is still possible for E: r7c5. Row 7 and column 5 are now closed to everyone else.",
+     "removed": 1,
+     "placed": [
+      "E",
+      52
+     ]
+    },
+    {
+     "kind": "verdict",
+     "tier": 1,
+     "text": "V is at r8c3.",
+     "removed": 0,
+     "placed": [
+      "V",
+      58
+     ]
+    }
+   ]
+  },
+  "meta": {
+   "quality_version": "scene-design-v1",
+   "implied_atoms_removed": 0,
+   "scene_spec": {
+    "schema": "murdoku.scene_spec/1",
+    "anchors_per_area": {},
+    "blocker_rate": 0.2,
+    "furniture_rate": 0.16
+   }
+  }
+ },
+ "murdoku_theme": {
+  "theme_id": "theatre-c4ec606f",
+  "title": "The Show Must Go On",
+  "names": {
+   "A": "Ada Ashworth",
+   "B": "Basil Blackwood",
+   "C": "Cleo Carrow",
+   "D": "Dorian Dale",
+   "E": "Esme Elwood",
+   "F": "Felix Fairweather",
+   "G": "Greta Gale",
+   "V": "Vera Vane"
+  },
+  "pronouns": {
+   "A": "she",
+   "B": "he",
+   "C": "she",
+   "D": "he",
+   "E": "she",
+   "F": "he",
+   "G": "she",
+   "V": "she"
+  },
+  "areas": [
+   "Stage",
+   "Box Office",
+   "Foyer",
+   "Prop Store",
+   "Wings"
+  ],
+  "objects": {
+   "bed": "prop coffin",
+   "chair": "director's chair",
+   "carpet": "stage rug",
+   "car": "pumpkin coach",
+   "tv": "spotlight",
+   "crate": "prop trunk",
+   "register": "box-office till",
+   "palm": "potted palm",
+   "statue": "plaster bust",
+   "boulder": "papier-mâché rock",
+   "barrel": "sandbag"
+  },
+  "tags": {},
+  "victim_note": "was found dead",
+  "blurb": "Backstage, everyone has a motive. Out front, the audience is still applauding.",
+  "assets": {},
+  "setting_id": "theatre",
+  "visual": {
+   "accent": "#9b2335",
+   "finishes": [
+    "boards",
+    "planks",
+    "carpet",
+    "herringbone",
+    "parquet",
+    "terrazzo",
+    "checker"
+   ],
+   "wallpapers": [
+    "curtain_red",
+    "blackbox",
+    "poster_brick"
+   ],
+   "variants": {
+    "carpet": [
+     "rose",
+     "plum"
+    ],
+    "terrazzo": [
+     "rose",
+     "cream"
+    ],
+    "checker": [
+     "noir"
+    ]
+   },
+   "frame": "theatre",
+   "skins": {
+    "bed": "stage_coffin",
+    "chair": "directors_chair",
+    "car": "pumpkin_coach",
+    "table": "vanity",
+    "tv": "spotlight",
+    "shelf": "costume_rack",
+    "tree": "flat_tree",
+    "crate": "prop_trunk",
+    "box": "wig_stand",
+    "barrel": "sandbag"
+   },
+   "setting": "theatre",
+   "area_finishes": {
+    "0": "boards",
+    "1": "terrazzo",
+    "2": "terrazzo",
+    "3": "planks",
+    "4": "boards"
+   },
+   "area_wallpapers": {
+    "0": "curtain_red",
+    "1": "poster_brick",
+    "2": "curtain_red",
+    "3": "blackbox",
+    "4": "blackbox"
+   }
+  }
+ }
+}

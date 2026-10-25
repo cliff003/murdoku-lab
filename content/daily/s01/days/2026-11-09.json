@@ -1,0 +1,565 @@
+{
+ "schema": "murdoku.daily_case/1",
+ "date": "2026-11-09",
+ "n": 29,
+ "weekday": "monday",
+ "size": 6,
+ "band": "easy",
+ "special": null,
+ "setting": "theatre",
+ "murderer": "C",
+ "victim": "Victor Vane",
+ "murdoku_case": {
+  "schema": "murdoku.case/1",
+  "id": "59b7418e276fcbcc",
+  "variant": "classic",
+  "scene": {
+   "W": 6,
+   "H": 6,
+   "area_of": [
+    2,
+    2,
+    2,
+    2,
+    0,
+    0,
+    2,
+    3,
+    2,
+    2,
+    0,
+    0,
+    3,
+    3,
+    4,
+    4,
+    1,
+    0,
+    3,
+    3,
+    4,
+    1,
+    1,
+    1,
+    3,
+    4,
+    4,
+    1,
+    1,
+    1,
+    3,
+    3,
+    4,
+    4,
+    1,
+    1
+   ],
+   "obj_of": [
+    "crate",
+    "car",
+    "car",
+    null,
+    null,
+    "shelf",
+    null,
+    null,
+    null,
+    null,
+    null,
+    "chair",
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    "piano",
+    null,
+    null,
+    "carpet",
+    null,
+    null,
+    "statue",
+    null,
+    "piano",
+    "shrub",
+    null,
+    null,
+    null,
+    null,
+    "chair",
+    null,
+    "box",
+    null
+   ],
+   "props": [
+    {
+     "pid": "box",
+     "standable": false,
+     "cells": [
+      34
+     ],
+     "landmark": false
+    },
+    {
+     "pid": "car",
+     "standable": true,
+     "cells": [
+      1,
+      2
+     ],
+     "landmark": false
+    },
+    {
+     "pid": "carpet",
+     "standable": true,
+     "cells": [
+      21
+     ],
+     "landmark": false
+    },
+    {
+     "pid": "chair",
+     "standable": true,
+     "cells": [
+      11,
+      32
+     ],
+     "landmark": false
+    },
+    {
+     "pid": "crate",
+     "standable": false,
+     "cells": [
+      0
+     ],
+     "landmark": false
+    },
+    {
+     "pid": "piano",
+     "standable": false,
+     "cells": [
+      18,
+      26
+     ],
+     "landmark": true
+    },
+    {
+     "pid": "shelf",
+     "standable": false,
+     "cells": [
+      5
+     ],
+     "landmark": false
+    },
+    {
+     "pid": "shrub",
+     "standable": false,
+     "cells": [
+      27
+     ],
+     "landmark": false
+    },
+    {
+     "pid": "statue",
+     "standable": false,
+     "cells": [
+      24
+     ],
+     "landmark": true
+    }
+   ],
+   "terrain_of": [
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor"
+   ],
+   "allow_disconnected_areas": false,
+   "doors": [
+    [
+     3,
+     4
+    ],
+    [
+     6,
+     12
+    ],
+    [
+     8,
+     14
+    ],
+    [
+     15,
+     16
+    ],
+    [
+     17,
+     23
+    ],
+    [
+     19,
+     20
+    ]
+   ]
+  },
+  "characters": [
+   "A",
+   "B",
+   "C",
+   "D",
+   "E",
+   "V"
+  ],
+  "victim": "V",
+  "tags": {},
+  "clues": [
+   {
+    "atoms": [
+     {
+      "kind": "only_beside",
+      "holder": "D",
+      "args": [
+       "shelf"
+      ]
+     }
+    ]
+   },
+   {
+    "atoms": [
+     {
+      "kind": "only_beside",
+      "holder": "A",
+      "args": [
+       "shrub"
+      ]
+     },
+     {
+      "kind": "only_on",
+      "holder": "A",
+      "args": [
+       "carpet"
+      ]
+     }
+    ]
+   },
+   {
+    "atoms": [
+     {
+      "kind": "in_areas",
+      "holder": "E",
+      "args": [
+       [
+        0,
+        2,
+        3
+       ]
+      ]
+     },
+     {
+      "kind": "in_corner",
+      "holder": "E",
+      "args": []
+     }
+    ]
+   },
+   {
+    "atoms": [
+     {
+      "kind": "only_beside",
+      "holder": "E",
+      "args": [
+       "car"
+      ]
+     }
+    ]
+   },
+   {
+    "atoms": [
+     {
+      "kind": "in_area",
+      "holder": "B",
+      "args": [
+       1
+      ]
+     }
+    ]
+   },
+   {
+    "atoms": [
+     {
+      "kind": "not_in_corner",
+      "holder": "C",
+      "args": []
+     }
+    ]
+   }
+  ],
+  "solution": {
+   "A": 21,
+   "B": 29,
+   "C": 13,
+   "D": 4,
+   "E": 8,
+   "V": 30
+  },
+  "answer": "murderer",
+  "answer_key": "C",
+  "theme_id": null,
+  "seed": 9243261,
+  "target_band": "easy",
+  "certificate": {
+   "solved": true,
+   "depth": 9,
+   "tier_max": 1,
+   "tier_hist": {
+    "1": 9
+   },
+   "advanced": 0,
+   "cost": 9.0,
+   "max_width": 49,
+   "guess_free": true,
+   "place_order": [
+    "A",
+    "E",
+    "D",
+    "C",
+    "V",
+    "B"
+   ],
+   "bottleneck": {
+    "kind": "single",
+    "tier": 1,
+    "text": "Only one square is still possible for A: r4c4. Row 4 and column 4 are now closed to everyone else.",
+    "removed": 15,
+    "placed": [
+     "A",
+     21
+    ]
+   },
+   "steps": [
+    {
+     "kind": "setup",
+     "tier": 1,
+     "text": "Mark the cells each clue allows. 7 cell(s) are unusable (a table, shelf, plant or the like stands there); 49 candidate placements remain across 6 people.",
+     "removed": 0
+    },
+    {
+     "kind": "single",
+     "tier": 1,
+     "text": "Only one square is still possible for A: r4c4. Row 4 and column 4 are now closed to everyone else.",
+     "removed": 15,
+     "placed": [
+      "A",
+      21
+     ]
+    },
+    {
+     "kind": "single",
+     "tier": 1,
+     "text": "Only one square is still possible for E: r2c3. Row 2 and column 3 are now closed to everyone else.",
+     "removed": 11,
+     "placed": [
+      "E",
+      8
+     ]
+    },
+    {
+     "kind": "single",
+     "tier": 1,
+     "text": "Only one square is still possible for D: r1c5. Row 1 and column 5 are now closed to everyone else.",
+     "removed": 8,
+     "placed": [
+      "D",
+      4
+     ]
+    },
+    {
+     "kind": "line",
+     "tier": 1,
+     "text": "V is the only person who can be in column 1, and every column holds someone — so V is there.",
+     "removed": 6
+    },
+    {
+     "kind": "line",
+     "tier": 1,
+     "text": "C is the only person who can be in column 2, and every column holds someone — so C is there.",
+     "removed": 1
+    },
+    {
+     "kind": "single",
+     "tier": 1,
+     "text": "Only one square is still possible for C: r3c2. Row 3 and column 2 are now closed to everyone else.",
+     "removed": 1,
+     "placed": [
+      "C",
+      13
+     ]
+    },
+    {
+     "kind": "single",
+     "tier": 1,
+     "text": "Only one square is still possible for V: r6c1. Row 6 and column 1 are now closed to everyone else.",
+     "removed": 1,
+     "placed": [
+      "V",
+      30
+     ]
+    },
+    {
+     "kind": "verdict",
+     "tier": 1,
+     "text": "B is at r5c6.",
+     "removed": 0,
+     "placed": [
+      "B",
+      29
+     ]
+    }
+   ]
+  },
+  "meta": {
+   "quality_version": "scene-design-v1",
+   "implied_atoms_removed": 0,
+   "scene_spec": {
+    "schema": "murdoku.scene_spec/1",
+    "anchors_per_area": {},
+    "blocker_rate": 0.2,
+    "furniture_rate": 0.16
+   }
+  }
+ },
+ "murdoku_theme": {
+  "theme_id": "theatre-ff2edc94",
+  "title": "Final Curtain",
+  "names": {
+   "A": "Ada Ashworth",
+   "B": "Basil Blackwood",
+   "C": "Cleo Carrow",
+   "D": "Dorian Dale",
+   "E": "Esme Elwood",
+   "V": "Victor Vane"
+  },
+  "pronouns": {
+   "A": "she",
+   "B": "he",
+   "C": "she",
+   "D": "he",
+   "E": "she",
+   "V": "he"
+  },
+  "areas": [
+   "Dressing Room",
+   "Green Room",
+   "Prop Store",
+   "Stage",
+   "Orchestra Pit"
+  ],
+  "objects": {
+   "chair": "director's chair",
+   "carpet": "stage rug",
+   "car": "pumpkin coach",
+   "shelf": "costume rail",
+   "shrub": "prop hedge",
+   "crate": "prop trunk",
+   "box": "wig stand",
+   "statue": "plaster bust",
+   "piano": "rehearsal piano"
+  },
+  "tags": {},
+  "victim_note": "was found dead",
+  "blurb": "Three acts, two intervals and one death that the audience mistook for the play.",
+  "assets": {},
+  "setting_id": "theatre",
+  "visual": {
+   "accent": "#9b2335",
+   "finishes": [
+    "boards",
+    "planks",
+    "carpet",
+    "herringbone",
+    "parquet",
+    "terrazzo",
+    "checker"
+   ],
+   "wallpapers": [
+    "curtain_red",
+    "blackbox",
+    "poster_brick"
+   ],
+   "variants": {
+    "carpet": [
+     "rose",
+     "plum"
+    ],
+    "terrazzo": [
+     "rose",
+     "cream"
+    ],
+    "checker": [
+     "noir"
+    ]
+   },
+   "frame": "theatre",
+   "skins": {
+    "bed": "stage_coffin",
+    "chair": "directors_chair",
+    "car": "pumpkin_coach",
+    "table": "vanity",
+    "tv": "spotlight",
+    "shelf": "costume_rack",
+    "tree": "flat_tree",
+    "crate": "prop_trunk",
+    "box": "wig_stand",
+    "barrel": "sandbag"
+   },
+   "setting": "theatre",
+   "area_finishes": {
+    "0": "planks",
+    "1": "carpet",
+    "2": "planks",
+    "3": "boards",
+    "4": "boards"
+   },
+   "area_wallpapers": {
+    "0": "poster_brick",
+    "1": "poster_brick",
+    "2": "blackbox",
+    "3": "curtain_red",
+    "4": "blackbox"
+   }
+  }
+ }
+}

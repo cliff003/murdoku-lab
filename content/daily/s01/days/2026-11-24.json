@@ -1,0 +1,582 @@
+{
+ "schema": "murdoku.daily_case/1",
+ "date": "2026-11-24",
+ "n": 44,
+ "weekday": "tuesday",
+ "size": 6,
+ "band": "medium",
+ "special": null,
+ "setting": "glasshouse",
+ "murderer": "D",
+ "victim": "Vincent Vane",
+ "murdoku_case": {
+  "schema": "murdoku.case/1",
+  "id": "36d4e2350197d3a7",
+  "variant": "classic",
+  "scene": {
+   "W": 6,
+   "H": 6,
+   "area_of": [
+    0,
+    0,
+    0,
+    1,
+    2,
+    2,
+    0,
+    0,
+    0,
+    1,
+    2,
+    2,
+    0,
+    0,
+    0,
+    1,
+    2,
+    2,
+    3,
+    3,
+    3,
+    4,
+    4,
+    4,
+    3,
+    3,
+    3,
+    4,
+    4,
+    4,
+    3,
+    3,
+    3,
+    4,
+    4,
+    4
+   ],
+   "obj_of": [
+    null,
+    "tv",
+    "carpet",
+    "statue",
+    null,
+    null,
+    null,
+    null,
+    "carpet",
+    null,
+    "bed",
+    "register",
+    "boulder",
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    "boulder",
+    null,
+    null,
+    "tree",
+    null,
+    null,
+    "bed",
+    "bed",
+    null,
+    null,
+    "bear",
+    null
+   ],
+   "props": [
+    {
+     "pid": "bear",
+     "standable": false,
+     "cells": [
+      34
+     ],
+     "landmark": false
+    },
+    {
+     "pid": "bed",
+     "standable": true,
+     "cells": [
+      10,
+      30,
+      31
+     ],
+     "landmark": false
+    },
+    {
+     "pid": "boulder",
+     "standable": false,
+     "cells": [
+      12,
+      24
+     ],
+     "landmark": true
+    },
+    {
+     "pid": "carpet",
+     "standable": true,
+     "cells": [
+      2,
+      8
+     ],
+     "landmark": false
+    },
+    {
+     "pid": "register",
+     "standable": false,
+     "cells": [
+      11
+     ],
+     "landmark": false
+    },
+    {
+     "pid": "statue",
+     "standable": false,
+     "cells": [
+      3
+     ],
+     "landmark": true
+    },
+    {
+     "pid": "tree",
+     "standable": false,
+     "cells": [
+      27
+     ],
+     "landmark": false
+    },
+    {
+     "pid": "tv",
+     "standable": false,
+     "cells": [
+      1
+     ],
+     "landmark": false
+    }
+   ],
+   "terrain_of": [
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor"
+   ],
+   "allow_disconnected_areas": false,
+   "doors": [
+    [
+     8,
+     9
+    ],
+    [
+     14,
+     20
+    ],
+    [
+     15,
+     21
+    ],
+    [
+     17,
+     23
+    ],
+    [
+     32,
+     33
+    ]
+   ]
+  },
+  "characters": [
+   "A",
+   "B",
+   "C",
+   "D",
+   "E",
+   "V"
+  ],
+  "victim": "V",
+  "tags": {},
+  "clues": [
+   {
+    "atoms": [
+     {
+      "kind": "col_offset",
+      "holder": "E",
+      "args": [
+       "V",
+       1
+      ]
+     },
+     {
+      "kind": "in_area",
+      "holder": "E",
+      "args": [
+       0
+      ]
+     }
+    ]
+   },
+   {
+    "atoms": [
+     {
+      "kind": "on",
+      "holder": "A",
+      "args": [
+       "bed"
+      ]
+     }
+    ]
+   },
+   {
+    "atoms": [
+     {
+      "kind": "with",
+      "holder": "C",
+      "args": [
+       "A"
+      ]
+     }
+    ]
+   },
+   {
+    "atoms": [
+     {
+      "kind": "in_corner",
+      "holder": "V",
+      "args": []
+     }
+    ]
+   },
+   {
+    "atoms": [
+     {
+      "kind": "other_beside",
+      "holder": "D",
+      "args": [
+       "bed"
+      ]
+     }
+    ]
+   }
+  ],
+  "solution": {
+   "A": 10,
+   "B": 21,
+   "C": 5,
+   "D": 26,
+   "E": 13,
+   "V": 30
+  },
+  "answer": "murderer",
+  "answer_key": "D",
+  "theme_id": null,
+  "seed": 7107192,
+  "target_band": "medium",
+  "certificate": {
+   "solved": true,
+   "depth": 17,
+   "tier_max": 3,
+   "tier_hist": {
+    "1": 10,
+    "2": 5,
+    "3": 2
+   },
+   "advanced": 2,
+   "cost": 30.0,
+   "max_width": 113,
+   "guess_free": true,
+   "place_order": [
+    "A",
+    "E",
+    "C",
+    "D",
+    "V",
+    "B"
+   ],
+   "bottleneck": {
+    "kind": "naked_subset",
+    "tier": 3,
+    "text": "A, V are confined to columns [1, 5] — between them they use all 2, so no one else can: 10 candidate(s) cleared.",
+    "removed": 10
+   },
+   "steps": [
+    {
+     "kind": "setup",
+     "tier": 1,
+     "text": "Mark the cells each clue allows. 7 cell(s) are unusable (a table, shelf, plant or the like stands there); 113 candidate placements remain across 6 people.",
+     "removed": 0
+    },
+    {
+     "kind": "relational",
+     "tier": 2,
+     "text": "Cross-checking the clue linking E and V (col_offset) removes 18 candidate(s).",
+     "removed": 18
+    },
+    {
+     "kind": "relational",
+     "tier": 2,
+     "text": "Cross-checking the clue linking C and A (with) removes 16 candidate(s).",
+     "removed": 16
+    },
+    {
+     "kind": "tagshare",
+     "tier": 2,
+     "text": "D shared an area with someone beside a bed, so areas where that is no longer possible are ruled out (16 candidate(s) cleared).",
+     "removed": 16
+    },
+    {
+     "kind": "line",
+     "tier": 1,
+     "text": "B is the only person who can be in column 4, and every column holds someone — so B is there.",
+     "removed": 25
+    },
+    {
+     "kind": "naked_subset",
+     "tier": 3,
+     "text": "B, E are confined to columns [2, 4] — between them they use all 2, so no one else can: 7 candidate(s) cleared.",
+     "removed": 7
+    },
+    {
+     "kind": "naked_subset",
+     "tier": 3,
+     "text": "A, V are confined to columns [1, 5] — between them they use all 2, so no one else can: 10 candidate(s) cleared.",
+     "removed": 10
+    },
+    {
+     "kind": "line",
+     "tier": 1,
+     "text": "A is the only person who can be in column 5, and every column holds someone — so A is there.",
+     "removed": 1
+    },
+    {
+     "kind": "single",
+     "tier": 1,
+     "text": "Only one square is still possible for A: r2c5. Row 2 and column 5 are now closed to everyone else.",
+     "removed": 2,
+     "placed": [
+      "A",
+      10
+     ]
+    },
+    {
+     "kind": "single",
+     "tier": 1,
+     "text": "Only one square is still possible for E: r3c2. Row 3 and column 2 are now closed to everyone else.",
+     "removed": 3,
+     "placed": [
+      "E",
+      13
+     ]
+    },
+    {
+     "kind": "relational",
+     "tier": 2,
+     "text": "Cross-checking the clue linking C and A (with) removes 3 candidate(s).",
+     "removed": 3
+    },
+    {
+     "kind": "single",
+     "tier": 1,
+     "text": "Only one square is still possible for C: r1c6. Row 1 and column 6 are now closed to everyone else.",
+     "removed": 2,
+     "placed": [
+      "C",
+      5
+     ]
+    },
+    {
+     "kind": "line",
+     "tier": 1,
+     "text": "D is the only person who can be in row 5, and every row holds someone — so D is there.",
+     "removed": 2
+    },
+    {
+     "kind": "single",
+     "tier": 1,
+     "text": "Only one square is still possible for D: r5c3. Row 5 and column 3 are now closed to everyone else.",
+     "removed": 0,
+     "placed": [
+      "D",
+      26
+     ]
+    },
+    {
+     "kind": "tagshare",
+     "tier": 2,
+     "text": "D is in area 4 and only V can be the one beside a bed, so V is confined to it (1 cleared).",
+     "removed": 1
+    },
+    {
+     "kind": "single",
+     "tier": 1,
+     "text": "Only one square is still possible for V: r6c1. Row 6 and column 1 are now closed to everyone else.",
+     "removed": 1,
+     "placed": [
+      "V",
+      30
+     ]
+    },
+    {
+     "kind": "verdict",
+     "tier": 1,
+     "text": "B is at r4c4.",
+     "removed": 0,
+     "placed": [
+      "B",
+      21
+     ]
+    }
+   ]
+  },
+  "meta": {
+   "quality_version": "scene-design-v1",
+   "implied_atoms_removed": 0,
+   "scene_spec": {
+    "schema": "murdoku.scene_spec/1",
+    "anchors_per_area": {},
+    "blocker_rate": 0.2,
+    "furniture_rate": 0.16
+   }
+  }
+ },
+ "murdoku_theme": {
+  "theme_id": "glasshouse-6708bffe",
+  "title": "Compost Mentis",
+  "names": {
+   "A": "Ada Ashworth",
+   "B": "Basil Blackwood",
+   "C": "Cleo Carrow",
+   "D": "Dorian Dale",
+   "E": "Esme Elwood",
+   "V": "Vincent Vane"
+  },
+  "pronouns": {
+   "A": "she",
+   "B": "he",
+   "C": "she",
+   "D": "he",
+   "E": "she",
+   "V": "he"
+  },
+  "areas": [
+   "Tea Pavilion",
+   "Lily House",
+   "Seed Store",
+   "Kitchen Garden",
+   "Palm House"
+  ],
+  "objects": {
+   "bed": "raised bed",
+   "carpet": "rug",
+   "tv": "beehive",
+   "tree": "lemon tree",
+   "register": "shop till",
+   "bear": "garden gnome",
+   "statue": "fountain",
+   "boulder": "rockery stone"
+  },
+  "tags": {},
+  "victim_note": "was found dead",
+  "blurb": "The estate is famous for its rare specimens. Tonight it gains one more.",
+  "assets": {},
+  "setting_id": "glasshouse",
+  "visual": {
+   "accent": "#2f7d5f",
+   "finishes": [
+    "terracotta",
+    "flagstone",
+    "paving",
+    "checker",
+    "lawn",
+    "boards",
+    "planks",
+    "marble"
+   ],
+   "wallpapers": [
+    "glass_pane",
+    "trellis",
+    "whitewash",
+    "brick"
+   ],
+   "variants": {
+    "carpet": [
+     "sage"
+    ],
+    "checker": [
+     "sage"
+    ],
+    "flagstone": [
+     "sandstone",
+     "grey"
+    ]
+   },
+   "frame": "glasshouse",
+   "skins": {
+    "bed": "raised_bed",
+    "table": "potting_bench",
+    "tv": "beehive",
+    "plant": "orchid",
+    "tree": "lemon_tree",
+    "crate": "pot_stack",
+    "box": "watering_can",
+    "bear": "gnome",
+    "statue": "fountain",
+    "piano": "wardian_case",
+    "barrel": "rain_barrel"
+   },
+   "setting": "glasshouse",
+   "area_finishes": {
+    "0": "checker",
+    "1": "flagstone",
+    "2": "planks",
+    "3": "lawn",
+    "4": "terracotta"
+   },
+   "area_wallpapers": {
+    "0": "trellis",
+    "1": "glass_pane",
+    "2": "whitewash",
+    "3": "trellis",
+    "4": "glass_pane"
+   }
+  }
+ }
+}

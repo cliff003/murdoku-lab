@@ -27,7 +27,7 @@ npm run release:local
 ```
 
 This prepares the complete release from versioned inputs: 24 frozen themed cases, five
-classics, one training case and 14 locked daily cases, plus the brand assets and a
+classics, one training case and 50 locked daily cases, plus the brand assets and a
 design-token check. It then builds the web app and serves everything on one port.
 The release does not generate new puzzles or re-theme existing release cases, and it
 does not depend on an `outputs/showcase/` directory.
@@ -143,7 +143,7 @@ python -m murdoku_lab.visual.play_export
 ```
 
 For a complete release, `npm run release:local` and `scripts/build_play.py` share
-`scripts.release_local.prepare_assets()`: each build prepares this library, the 14 locked
+`scripts.release_local.prepare_assets()`: each build prepares this library, the 50 locked
 daily cases with share links for its base URL, the brand assets and the design-token check
 before invoking Vite. These commands read the frozen inputs each time; previous files in
 `outputs/showcase/` are not release inputs.

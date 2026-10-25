@@ -72,7 +72,7 @@ Daily statistics and an expandable season calendar appear below.
 | Board | Pick a suspect and tap a square; rows, columns and clashes update at once; notes, undo, drag and keyboard play |
 | Training case | A coach walks a first case one deduction at a time |
 | Hints | Three levels, from a nudge to the square itself, from solver data computed offline |
-| Daily case | Cases unlock by date from the published season; 14 locked cases in the current release, with streaks and a spoiler-free share line |
+| Daily case | Cases unlock by date from the published season; 50 locked cases (October 12 – November 30) in the current release, with streaks and a spoiler-free share line |
 | Settings | Eight illustrated settings, from a manor and an ocean liner to a night train and a college library |
 | Large classics | The 16 × 16 estate and 24 × 24 museum, drawn in their own themes |
 | Results | The reveal, a closing paragraph, stars and a share card |
@@ -127,7 +127,7 @@ a setting of its own rather than one shared look.
 Try it locally with `npm run release:local`, or build a zip for testers with
 `npm run package:preview`. Default releases use versioned content: the 24 frozen themed
 bundles in `content/showcase/player-bundles.jsonl`, five classics, one training case and
-14 locked daily cases. They rebuild the artwork and web assets without generating or
+50 locked daily cases. They rebuild the artwork and web assets without generating or
 re-theming the release puzzles, and do not require `outputs/showcase/`.
 `npm run export:cases` rebuilds just the 30-case library from those same inputs.
 

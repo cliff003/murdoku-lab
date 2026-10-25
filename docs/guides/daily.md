@@ -4,7 +4,7 @@
 [Setting packs](../reference/settings.md) · [Project](../../README.md)
 
 Daily cases are numbered from the start of a season, with settings rotating between days.
-The current versioned release contains 14 locked cases, dated October 12–25, 2026.
+The current versioned release contains 50 locked cases, dated October 12 – November 30, 2026.
 Cases are generated, reviewed and locked before they ship. The player app only reads
 the locked, sealed result: nothing is generated or solved in the browser.
 

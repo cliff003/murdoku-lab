@@ -1,0 +1,521 @@
+{
+ "schema": "murdoku.daily_case/1",
+ "date": "2026-11-23",
+ "n": 43,
+ "weekday": "monday",
+ "size": 6,
+ "band": "easy",
+ "special": null,
+ "setting": "museum",
+ "murderer": "C",
+ "victim": "Violet Vane",
+ "murdoku_case": {
+  "schema": "murdoku.case/1",
+  "id": "6c5584081d04983e",
+  "variant": "classic",
+  "scene": {
+   "W": 6,
+   "H": 6,
+   "area_of": [
+    0,
+    0,
+    0,
+    0,
+    2,
+    2,
+    0,
+    0,
+    0,
+    0,
+    2,
+    2,
+    0,
+    0,
+    0,
+    0,
+    3,
+    3,
+    1,
+    1,
+    1,
+    1,
+    3,
+    3,
+    1,
+    1,
+    1,
+    1,
+    3,
+    3,
+    1,
+    1,
+    1,
+    1,
+    3,
+    3
+   ],
+   "obj_of": [
+    "statue",
+    null,
+    null,
+    null,
+    null,
+    "boulder",
+    "piano",
+    null,
+    null,
+    null,
+    null,
+    null,
+    "carpet",
+    "carpet",
+    null,
+    null,
+    null,
+    "box",
+    "chair",
+    null,
+    null,
+    null,
+    null,
+    null,
+    "statue",
+    null,
+    null,
+    null,
+    "piano",
+    "bed",
+    "boulder",
+    "carpet",
+    null,
+    null,
+    null,
+    null
+   ],
+   "props": [
+    {
+     "pid": "bed",
+     "standable": true,
+     "cells": [
+      29
+     ],
+     "landmark": false
+    },
+    {
+     "pid": "boulder",
+     "standable": false,
+     "cells": [
+      5,
+      30
+     ],
+     "landmark": true
+    },
+    {
+     "pid": "box",
+     "standable": false,
+     "cells": [
+      17
+     ],
+     "landmark": false
+    },
+    {
+     "pid": "carpet",
+     "standable": true,
+     "cells": [
+      12,
+      13,
+      31
+     ],
+     "landmark": false
+    },
+    {
+     "pid": "chair",
+     "standable": true,
+     "cells": [
+      18
+     ],
+     "landmark": false
+    },
+    {
+     "pid": "piano",
+     "standable": false,
+     "cells": [
+      6,
+      28
+     ],
+     "landmark": true
+    },
+    {
+     "pid": "statue",
+     "standable": false,
+     "cells": [
+      0,
+      24
+     ],
+     "landmark": true
+    }
+   ],
+   "terrain_of": [
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor"
+   ],
+   "allow_disconnected_areas": false,
+   "doors": [
+    [
+     9,
+     10
+    ],
+    [
+     10,
+     16
+    ],
+    [
+     15,
+     21
+    ]
+   ]
+  },
+  "characters": [
+   "A",
+   "B",
+   "C",
+   "D",
+   "E",
+   "V"
+  ],
+  "victim": "V",
+  "tags": {},
+  "clues": [
+   {
+    "atoms": [
+     {
+      "kind": "only_beside",
+      "holder": "D",
+      "args": [
+       "statue"
+      ]
+     },
+     {
+      "kind": "only_on",
+      "holder": "D",
+      "args": [
+       "chair"
+      ]
+     }
+    ]
+   },
+   {
+    "atoms": [
+     {
+      "kind": "row_offset",
+      "holder": "C",
+      "args": [
+       "A",
+       -3
+      ]
+     },
+     {
+      "kind": "beside",
+      "holder": "C",
+      "args": [
+       "piano"
+      ]
+     }
+    ]
+   },
+   {
+    "atoms": [
+     {
+      "kind": "beside",
+      "holder": "B",
+      "args": [
+       "carpet"
+      ]
+     }
+    ]
+   },
+   {
+    "atoms": [
+     {
+      "kind": "only_beside",
+      "holder": "E",
+      "args": [
+       "box"
+      ]
+     }
+    ]
+   }
+  ],
+  "solution": {
+   "A": 29,
+   "B": 32,
+   "C": 7,
+   "D": 18,
+   "E": 16,
+   "V": 3
+  },
+  "answer": "murderer",
+  "answer_key": "C",
+  "theme_id": null,
+  "seed": 29245577,
+  "target_band": "easy",
+  "certificate": {
+   "solved": true,
+   "depth": 10,
+   "tier_max": 2,
+   "tier_hist": {
+    "1": 9,
+    "2": 1
+   },
+   "advanced": 0,
+   "cost": 11.0,
+   "max_width": 72,
+   "guess_free": true,
+   "place_order": [
+    "D",
+    "E",
+    "C",
+    "B",
+    "V",
+    "A"
+   ],
+   "bottleneck": {
+    "kind": "relational",
+    "tier": 2,
+    "text": "Cross-checking the clue linking C and A (row_offset) removes 11 candidate(s).",
+    "removed": 11
+   },
+   "steps": [
+    {
+     "kind": "setup",
+     "tier": 1,
+     "text": "Mark the cells each clue allows. 7 cell(s) are unusable (a table, shelf, plant or the like stands there); 72 candidate placements remain across 6 people.",
+     "removed": 0
+    },
+    {
+     "kind": "single",
+     "tier": 1,
+     "text": "Only one square is still possible for D: r4c1. Row 4 and column 1 are now closed to everyone else.",
+     "removed": 18,
+     "placed": [
+      "D",
+      18
+     ]
+    },
+    {
+     "kind": "single",
+     "tier": 1,
+     "text": "Only one square is still possible for E: r3c5. Row 3 and column 5 are now closed to everyone else.",
+     "removed": 17,
+     "placed": [
+      "E",
+      16
+     ]
+    },
+    {
+     "kind": "exclusive",
+     "tier": 1,
+     "text": "D was the only person beside a statue — every other person is wiped off those 3 square(s) (5 candidate(s) cleared).",
+     "removed": 5
+    },
+    {
+     "kind": "relational",
+     "tier": 2,
+     "text": "Cross-checking the clue linking C and A (row_offset) removes 11 candidate(s).",
+     "removed": 11
+    },
+    {
+     "kind": "single",
+     "tier": 1,
+     "text": "Only one square is still possible for C: r2c2. Row 2 and column 2 are now closed to everyone else.",
+     "removed": 6,
+     "placed": [
+      "C",
+      7
+     ]
+    },
+    {
+     "kind": "single",
+     "tier": 1,
+     "text": "Only one square is still possible for B: r6c3. Row 6 and column 3 are now closed to everyone else.",
+     "removed": 6,
+     "placed": [
+      "B",
+      32
+     ]
+    },
+    {
+     "kind": "line",
+     "tier": 1,
+     "text": "V is the only person who can be in row 1, and every row holds someone — so V is there.",
+     "removed": 2
+    },
+    {
+     "kind": "single",
+     "tier": 1,
+     "text": "Only one square is still possible for V: r1c4. Row 1 and column 4 are now closed to everyone else.",
+     "removed": 1,
+     "placed": [
+      "V",
+      3
+     ]
+    },
+    {
+     "kind": "verdict",
+     "tier": 1,
+     "text": "A is at r5c6.",
+     "removed": 0,
+     "placed": [
+      "A",
+      29
+     ]
+    }
+   ]
+  },
+  "meta": {
+   "quality_version": "scene-design-v1",
+   "implied_atoms_removed": 0,
+   "scene_spec": {
+    "schema": "murdoku.scene_spec/1",
+    "anchors_per_area": {},
+    "blocker_rate": 0.2,
+    "furniture_rate": 0.16
+   }
+  }
+ },
+ "murdoku_theme": {
+  "theme_id": "museum-a4d23ba9",
+  "title": "Exhibit A",
+  "names": {
+   "A": "Ada Ashworth",
+   "B": "Basil Blackwood",
+   "C": "Cleo Carrow",
+   "D": "Dorian Dale",
+   "E": "Esme Elwood",
+   "V": "Violet Vane"
+  },
+  "pronouns": {
+   "A": "she",
+   "B": "he",
+   "C": "she",
+   "D": "he",
+   "E": "she",
+   "V": "she"
+  },
+  "areas": [
+   "Great Hall",
+   "Royal Gallery",
+   "Fossil Gallery",
+   "Egyptian Wing"
+  ],
+  "objects": {
+   "bed": "sarcophagus",
+   "chair": "gilded throne",
+   "carpet": "red carpet",
+   "box": "archive box",
+   "statue": "marble statue",
+   "piano": "pianola",
+   "boulder": "meteorite"
+  },
+  "tags": {},
+  "victim_note": "was found dead",
+  "blurb": "The lights dim for the speeches. When they come up again, one of the patrons is dead.",
+  "assets": {},
+  "setting_id": "museum",
+  "visual": {
+   "accent": "#8e2c32",
+   "finishes": [
+    "marble",
+    "terrazzo",
+    "parquet",
+    "herringbone",
+    "flagstone",
+    "checker",
+    "paving",
+    "planks",
+    "carpet"
+   ],
+   "wallpapers": [
+    "gallery_red",
+    "portrait_green",
+    "marble_wall",
+    "stone"
+   ],
+   "variants": {
+    "carpet": [
+     "rose",
+     "plum"
+    ],
+    "terrazzo": [
+     "cream",
+     "rose"
+    ],
+    "marble": [
+     "white",
+     "verde"
+    ]
+   },
+   "frame": "museum",
+   "skins": {
+    "bed": "sarcophagus",
+    "chair": "throne",
+    "car": "carriage",
+    "table": "display_case",
+    "tv": "gramophone",
+    "shelf": "specimen_cabinet",
+    "plant": "fern",
+    "bear": "dino_skull",
+    "statue": "classical_statue",
+    "boulder": "meteorite",
+    "barrel": "amphora"
+   },
+   "setting": "museum",
+   "area_finishes": {
+    "0": "marble",
+    "1": "marble",
+    "2": "flagstone",
+    "3": "terrazzo"
+   },
+   "area_wallpapers": {
+    "0": "marble_wall",
+    "1": "gallery_red",
+    "2": "gallery_red",
+    "3": "gallery_red"
+   }
+  }
+ }
+}

@@ -1,0 +1,537 @@
+{
+ "schema": "murdoku.daily_case/1",
+ "date": "2026-11-10",
+ "n": 30,
+ "weekday": "tuesday",
+ "size": 6,
+ "band": "medium",
+ "special": null,
+ "setting": "manor",
+ "murderer": "E",
+ "victim": "Vera Vane",
+ "murdoku_case": {
+  "schema": "murdoku.case/1",
+  "id": "18a5026471ff8126",
+  "variant": "classic",
+  "scene": {
+   "W": 6,
+   "H": 6,
+   "area_of": [
+    0,
+    0,
+    2,
+    2,
+    2,
+    3,
+    0,
+    0,
+    2,
+    2,
+    2,
+    3,
+    0,
+    0,
+    2,
+    1,
+    3,
+    3,
+    0,
+    0,
+    1,
+    1,
+    1,
+    1,
+    0,
+    0,
+    0,
+    1,
+    1,
+    1,
+    0,
+    0,
+    1,
+    1,
+    1,
+    1
+   ],
+   "obj_of": [
+    null,
+    "boulder",
+    null,
+    "table",
+    null,
+    null,
+    "chair",
+    "statue",
+    null,
+    null,
+    "piano",
+    "statue",
+    null,
+    "chair",
+    null,
+    null,
+    null,
+    "carpet",
+    null,
+    null,
+    "piano",
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    "chair",
+    "shelf",
+    "chair",
+    null
+   ],
+   "props": [
+    {
+     "pid": "boulder",
+     "standable": false,
+     "cells": [
+      1
+     ],
+     "landmark": true
+    },
+    {
+     "pid": "carpet",
+     "standable": true,
+     "cells": [
+      17
+     ],
+     "landmark": false
+    },
+    {
+     "pid": "chair",
+     "standable": true,
+     "cells": [
+      6,
+      13,
+      32,
+      34
+     ],
+     "landmark": false
+    },
+    {
+     "pid": "piano",
+     "standable": false,
+     "cells": [
+      10,
+      20
+     ],
+     "landmark": true
+    },
+    {
+     "pid": "shelf",
+     "standable": false,
+     "cells": [
+      33
+     ],
+     "landmark": false
+    },
+    {
+     "pid": "statue",
+     "standable": false,
+     "cells": [
+      7,
+      11
+     ],
+     "landmark": true
+    },
+    {
+     "pid": "table",
+     "standable": false,
+     "cells": [
+      3
+     ],
+     "landmark": false
+    }
+   ],
+   "terrain_of": [
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor"
+   ],
+   "allow_disconnected_areas": false,
+   "doors": [
+    [
+     4,
+     5
+    ],
+    [
+     9,
+     15
+    ],
+    [
+     13,
+     14
+    ]
+   ]
+  },
+  "characters": [
+   "A",
+   "B",
+   "C",
+   "D",
+   "E",
+   "V"
+  ],
+  "victim": "V",
+  "tags": {},
+  "clues": [
+   {
+    "atoms": [
+     {
+      "kind": "only_beside",
+      "holder": "B",
+      "args": [
+       "shelf"
+      ]
+     }
+    ]
+   },
+   {
+    "atoms": [
+     {
+      "kind": "on",
+      "holder": "E",
+      "args": [
+       "chair"
+      ]
+     }
+    ]
+   },
+   {
+    "atoms": [
+     {
+      "kind": "other_beside",
+      "holder": "A",
+      "args": [
+       "carpet"
+      ]
+     }
+    ]
+   },
+   {
+    "atoms": [
+     {
+      "kind": "col_offset",
+      "holder": "C",
+      "args": [
+       "D",
+       1
+      ]
+     }
+    ]
+   },
+   {
+    "atoms": [
+     {
+      "kind": "beside",
+      "holder": "D",
+      "args": [
+       "piano"
+      ]
+     }
+    ]
+   }
+  ],
+  "solution": {
+   "A": 5,
+   "B": 32,
+   "C": 16,
+   "D": 21,
+   "E": 6,
+   "V": 25
+  },
+  "answer": "murderer",
+  "answer_key": "E",
+  "theme_id": null,
+  "seed": 12175112,
+  "target_band": "medium",
+  "certificate": {
+   "solved": true,
+   "depth": 14,
+   "tier_max": 3,
+   "tier_hist": {
+    "1": 9,
+    "2": 4,
+    "3": 1
+   },
+   "advanced": 1,
+   "cost": 22.0,
+   "max_width": 97,
+   "guess_free": true,
+   "place_order": [
+    "C",
+    "A",
+    "E",
+    "D",
+    "B",
+    "V"
+   ],
+   "bottleneck": {
+    "kind": "naked_subset",
+    "tier": 3,
+    "text": "A, C are confined to columns [5, 6] — between them they use all 2, so no one else can: 11 candidate(s) cleared.",
+    "removed": 11
+   },
+   "steps": [
+    {
+     "kind": "setup",
+     "tier": 1,
+     "text": "Mark the cells each clue allows. 7 cell(s) are unusable (a table, shelf, plant or the like stands there); 97 candidate placements remain across 6 people.",
+     "removed": 0
+    },
+    {
+     "kind": "exclusive",
+     "tier": 1,
+     "text": "B was the only person beside a shelf — every other person is wiped off those 3 square(s) (11 candidate(s) cleared).",
+     "removed": 11
+    },
+    {
+     "kind": "relational",
+     "tier": 2,
+     "text": "Cross-checking the clue linking C and D (col_offset) removes 17 candidate(s).",
+     "removed": 17
+    },
+    {
+     "kind": "tagshare",
+     "tier": 2,
+     "text": "A shared an area with someone beside a carpet, so areas where that is no longer possible are ruled out (23 candidate(s) cleared).",
+     "removed": 23
+    },
+    {
+     "kind": "naked_subset",
+     "tier": 3,
+     "text": "A, C are confined to columns [5, 6] — between them they use all 2, so no one else can: 11 candidate(s) cleared.",
+     "removed": 11
+    },
+    {
+     "kind": "relational",
+     "tier": 2,
+     "text": "Cross-checking the clue linking C and D (col_offset) removes 5 candidate(s).",
+     "removed": 5
+    },
+    {
+     "kind": "line",
+     "tier": 1,
+     "text": "A is the only person who can be in column 6, and every column holds someone — so A is there.",
+     "removed": 1
+    },
+    {
+     "kind": "tagshare",
+     "tier": 2,
+     "text": "A is in area 4 and only C can be the one beside a carpet, so C is confined to it (3 cleared).",
+     "removed": 3
+    },
+    {
+     "kind": "single",
+     "tier": 1,
+     "text": "Only one square is still possible for C: r3c5. Row 3 and column 5 are now closed to everyone else.",
+     "removed": 6,
+     "placed": [
+      "C",
+      16
+     ]
+    },
+    {
+     "kind": "single",
+     "tier": 1,
+     "text": "Only one square is still possible for A: r1c6. Row 1 and column 6 are now closed to everyone else.",
+     "removed": 2,
+     "placed": [
+      "A",
+      5
+     ]
+    },
+    {
+     "kind": "single",
+     "tier": 1,
+     "text": "Only one square is still possible for E: r2c1. Row 2 and column 1 are now closed to everyone else.",
+     "removed": 7,
+     "placed": [
+      "E",
+      6
+     ]
+    },
+    {
+     "kind": "single",
+     "tier": 1,
+     "text": "Only one square is still possible for D: r4c4. Row 4 and column 4 are now closed to everyone else.",
+     "removed": 3,
+     "placed": [
+      "D",
+      21
+     ]
+    },
+    {
+     "kind": "single",
+     "tier": 1,
+     "text": "Only one square is still possible for B: r6c3. Row 6 and column 3 are now closed to everyone else.",
+     "removed": 2,
+     "placed": [
+      "B",
+      32
+     ]
+    },
+    {
+     "kind": "verdict",
+     "tier": 1,
+     "text": "V is at r5c2.",
+     "removed": 0,
+     "placed": [
+      "V",
+      25
+     ]
+    }
+   ]
+  },
+  "meta": {
+   "quality_version": "scene-design-v1",
+   "implied_atoms_removed": 0,
+   "scene_spec": {
+    "schema": "murdoku.scene_spec/1",
+    "anchors_per_area": {},
+    "blocker_rate": 0.2,
+    "furniture_rate": 0.16
+   }
+  }
+ },
+ "murdoku_theme": {
+  "theme_id": "manor-0b38defa",
+  "title": "The Alderwick Affair",
+  "names": {
+   "A": "Ada Ashworth",
+   "B": "Basil Blackwood",
+   "C": "Cleo Carrow",
+   "D": "Dorian Dale",
+   "E": "Esme Elwood",
+   "V": "Vera Vane"
+  },
+  "pronouns": {
+   "A": "she",
+   "B": "he",
+   "C": "she",
+   "D": "he",
+   "E": "she",
+   "V": "she"
+  },
+  "areas": [
+   "Music Room",
+   "Library",
+   "Drawing Room",
+   "Gallery"
+  ],
+  "objects": {
+   "chair": "wingback chair",
+   "carpet": "Persian rug",
+   "table": "oak table",
+   "shelf": "bookcase",
+   "statue": "marble bust",
+   "piano": "grand piano",
+   "boulder": "millstone"
+  },
+  "tags": {},
+  "victim_note": "was found dead",
+  "blurb": "The guests dressed for dinner. One of them dressed for murder.",
+  "assets": {},
+  "setting_id": "manor",
+  "visual": {
+   "accent": "#3d6a5b",
+   "tints": [
+    "#f1d8b4",
+    "#d3e4c3",
+    "#efe0a6",
+    "#c6dfe2",
+    "#f1cdc4",
+    "#d9cfeb",
+    "#cde8da",
+    "#e9d2a0",
+    "#c9d7f1",
+    "#ecc8db",
+    "#dde2c0",
+    "#bfe1d9"
+   ],
+   "finishes": [
+    "parquet",
+    "planks",
+    "herringbone",
+    "carpet",
+    "marble",
+    "flagstone",
+    "checker",
+    "boards"
+   ],
+   "frame": "manor",
+   "skins": {
+    "chair": "wingback",
+    "bed": "chaise",
+    "register": "writing_desk",
+    "tv": "cabinet_radio",
+    "plant": "fern",
+    "tree": "potted_bay",
+    "flowers": "lilies",
+    "shrub": "box_hedge",
+    "box": "hatbox",
+    "bear": "bearskin",
+    "boulder": "millstone",
+    "barrel": "wine_cask"
+   },
+   "setting": "manor",
+   "area_finishes": {
+    "0": "parquet",
+    "1": "parquet",
+    "2": "carpet",
+    "3": "marble"
+   },
+   "area_wallpapers": {
+    "0": "panel_blue",
+    "1": "panel_wood",
+    "2": "damask_rose",
+    "3": "damask_rose"
+   }
+  }
+ }
+}

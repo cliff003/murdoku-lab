@@ -1,0 +1,658 @@
+{
+ "schema": "murdoku.daily_case/1",
+ "date": "2026-11-25",
+ "n": 45,
+ "weekday": "wednesday",
+ "size": 7,
+ "band": "medium",
+ "special": null,
+ "setting": "chalet",
+ "murderer": "B",
+ "victim": "Vaughn Vane",
+ "murdoku_case": {
+  "schema": "murdoku.case/1",
+  "id": "5d242539702c59ad",
+  "variant": "classic",
+  "scene": {
+   "W": 7,
+   "H": 7,
+   "area_of": [
+    1,
+    1,
+    1,
+    1,
+    2,
+    2,
+    2,
+    1,
+    1,
+    2,
+    2,
+    2,
+    2,
+    2,
+    1,
+    1,
+    1,
+    2,
+    2,
+    2,
+    2,
+    1,
+    1,
+    3,
+    3,
+    3,
+    3,
+    3,
+    1,
+    1,
+    1,
+    3,
+    3,
+    3,
+    3,
+    0,
+    0,
+    0,
+    0,
+    3,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "obj_of": [
+    null,
+    null,
+    null,
+    null,
+    "piano",
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    "car",
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    "car",
+    "crate",
+    null,
+    "register",
+    "chair",
+    null,
+    null,
+    "carpet",
+    "piano",
+    null,
+    "piano",
+    "statue",
+    null,
+    null,
+    "carpet",
+    null,
+    "plant",
+    null,
+    null,
+    null,
+    null,
+    null,
+    "statue",
+    "boulder",
+    null,
+    null,
+    null,
+    null,
+    null,
+    "car",
+    "car"
+   ],
+   "props": [
+    {
+     "pid": "boulder",
+     "standable": false,
+     "cells": [
+      41
+     ],
+     "landmark": true
+    },
+    {
+     "pid": "car",
+     "standable": true,
+     "cells": [
+      11,
+      18,
+      47,
+      48
+     ],
+     "landmark": false
+    },
+    {
+     "pid": "carpet",
+     "standable": true,
+     "cells": [
+      25,
+      32
+     ],
+     "landmark": false
+    },
+    {
+     "pid": "chair",
+     "standable": true,
+     "cells": [
+      22
+     ],
+     "landmark": false
+    },
+    {
+     "pid": "crate",
+     "standable": false,
+     "cells": [
+      19
+     ],
+     "landmark": false
+    },
+    {
+     "pid": "piano",
+     "standable": false,
+     "cells": [
+      4,
+      26,
+      28
+     ],
+     "landmark": true
+    },
+    {
+     "pid": "plant",
+     "standable": false,
+     "cells": [
+      34
+     ],
+     "landmark": false
+    },
+    {
+     "pid": "register",
+     "standable": false,
+     "cells": [
+      21
+     ],
+     "landmark": false
+    },
+    {
+     "pid": "statue",
+     "standable": false,
+     "cells": [
+      29,
+      40
+     ],
+     "landmark": true
+    }
+   ],
+   "terrain_of": [
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor"
+   ],
+   "allow_disconnected_areas": false,
+   "doors": [
+    [
+     16,
+     17
+    ],
+    [
+     20,
+     27
+    ],
+    [
+     23,
+     30
+    ],
+    [
+     30,
+     37
+    ],
+    [
+     31,
+     38
+    ]
+   ]
+  },
+  "characters": [
+   "A",
+   "B",
+   "C",
+   "D",
+   "E",
+   "F",
+   "V"
+  ],
+  "victim": "V",
+  "tags": {},
+  "clues": [
+   {
+    "atoms": [
+     {
+      "kind": "only_on",
+      "holder": "A",
+      "args": [
+       "carpet"
+      ]
+     }
+    ]
+   },
+   {
+    "atoms": [
+     {
+      "kind": "col_offset",
+      "holder": "F",
+      "args": [
+       "D",
+       -1
+      ]
+     },
+     {
+      "kind": "alone",
+      "holder": "F",
+      "args": []
+     }
+    ]
+   },
+   {
+    "atoms": [
+     {
+      "kind": "in_area",
+      "holder": "B",
+      "args": [
+       1
+      ]
+     },
+     {
+      "kind": "in_corner",
+      "holder": "B",
+      "args": []
+     }
+    ]
+   },
+   {
+    "atoms": [
+     {
+      "kind": "only_beside",
+      "holder": "E",
+      "args": [
+       "statue"
+      ]
+     }
+    ]
+   },
+   {
+    "atoms": [
+     {
+      "kind": "beside",
+      "holder": "C",
+      "args": [
+       "plant"
+      ]
+     }
+    ]
+   }
+  ],
+  "solution": {
+   "A": 32,
+   "B": 0,
+   "C": 27,
+   "D": 38,
+   "E": 47,
+   "F": 9,
+   "V": 15
+  },
+  "answer": "murderer",
+  "answer_key": "B",
+  "theme_id": null,
+  "seed": 22817231,
+  "target_band": "medium",
+  "certificate": {
+   "solved": true,
+   "depth": 19,
+   "tier_max": 3,
+   "tier_hist": {
+    "1": 12,
+    "2": 6,
+    "3": 1
+   },
+   "advanced": 1,
+   "cost": 29.0,
+   "max_width": 131,
+   "guess_free": true,
+   "place_order": [
+    "E",
+    "C",
+    "A",
+    "F",
+    "B",
+    "D",
+    "V"
+   ],
+   "bottleneck": {
+    "kind": "naked_subset",
+    "tier": 3,
+    "text": "A, C are confined to rows [4, 5] — between them they use all 2, so no one else can: 12 candidate(s) cleared.",
+    "removed": 12
+   },
+   "steps": [
+    {
+     "kind": "setup",
+     "tier": 1,
+     "text": "Mark the cells each clue allows. 9 cell(s) are unusable (a table, shelf, plant or the like stands there); 131 candidate placements remain across 7 people.",
+     "removed": 0
+    },
+    {
+     "kind": "exclusive",
+     "tier": 1,
+     "text": "A was the only person on a carpet — every other person is wiped off those 2 square(s) (6 candidate(s) cleared).",
+     "removed": 6
+    },
+    {
+     "kind": "exclusive",
+     "tier": 1,
+     "text": "E was the only person beside a statue — every other person is wiped off those 3 square(s) (10 candidate(s) cleared).",
+     "removed": 10
+    },
+    {
+     "kind": "relational",
+     "tier": 2,
+     "text": "Cross-checking the clue linking F and D (col_offset) removes 10 candidate(s).",
+     "removed": 10
+    },
+    {
+     "kind": "alone",
+     "tier": 2,
+     "text": "Someone else is pinned to an area F would have had to itself — 14 candidate(s) cleared.",
+     "removed": 14
+    },
+    {
+     "kind": "naked_subset",
+     "tier": 3,
+     "text": "A, C are confined to rows [4, 5] — between them they use all 2, so no one else can: 12 candidate(s) cleared.",
+     "removed": 12
+    },
+    {
+     "kind": "single",
+     "tier": 1,
+     "text": "Only one square is still possible for E: r7c6. Row 7 and column 6 are now closed to everyone else.",
+     "removed": 23,
+     "placed": [
+      "E",
+      47
+     ]
+    },
+    {
+     "kind": "single",
+     "tier": 1,
+     "text": "Only one square is still possible for C: r4c7. Row 4 and column 7 are now closed to everyone else.",
+     "removed": 7,
+     "placed": [
+      "C",
+      27
+     ]
+    },
+    {
+     "kind": "single",
+     "tier": 1,
+     "text": "Only one square is still possible for A: r5c5. Row 5 and column 5 are now closed to everyone else.",
+     "removed": 8,
+     "placed": [
+      "A",
+      32
+     ]
+    },
+    {
+     "kind": "relational",
+     "tier": 2,
+     "text": "Cross-checking the clue linking F and D (col_offset) removes 3 candidate(s).",
+     "removed": 3
+    },
+    {
+     "kind": "alone",
+     "tier": 2,
+     "text": "Someone else is pinned to an area F would have had to itself — 3 candidate(s) cleared.",
+     "removed": 3
+    },
+    {
+     "kind": "single",
+     "tier": 1,
+     "text": "Only one square is still possible for F: r2c3. Row 2 and column 3 are now closed to everyone else.",
+     "removed": 14,
+     "placed": [
+      "F",
+      9
+     ]
+    },
+    {
+     "kind": "relational",
+     "tier": 2,
+     "text": "Cross-checking the clue linking F and D (col_offset) removes 3 candidate(s).",
+     "removed": 3
+    },
+    {
+     "kind": "line",
+     "tier": 1,
+     "text": "V is the only person who can be in column 2, and every column holds someone — so V is there.",
+     "removed": 6
+    },
+    {
+     "kind": "line",
+     "tier": 1,
+     "text": "B is the only person who can be in column 1, and every column holds someone — so B is there.",
+     "removed": 1
+    },
+    {
+     "kind": "single",
+     "tier": 1,
+     "text": "Only one square is still possible for B: r1c1. Row 1 and column 1 are now closed to everyone else.",
+     "removed": 2,
+     "placed": [
+      "B",
+      0
+     ]
+    },
+    {
+     "kind": "alone",
+     "tier": 2,
+     "text": "F was alone and can only be in area 2, so nobody else can be there: 1 candidate(s) cleared.",
+     "removed": 1
+    },
+    {
+     "kind": "single",
+     "tier": 1,
+     "text": "Only one square is still possible for D: r6c4. Row 6 and column 4 are now closed to everyone else.",
+     "removed": 1,
+     "placed": [
+      "D",
+      38
+     ]
+    },
+    {
+     "kind": "verdict",
+     "tier": 1,
+     "text": "V is at r3c2.",
+     "removed": 0,
+     "placed": [
+      "V",
+      15
+     ]
+    }
+   ]
+  },
+  "meta": {
+   "quality_version": "scene-design-v1",
+   "implied_atoms_removed": 0,
+   "scene_spec": {
+    "schema": "murdoku.scene_spec/1",
+    "anchors_per_area": {},
+    "blocker_rate": 0.2,
+    "furniture_rate": 0.16
+   }
+  }
+ },
+ "murdoku_theme": {
+  "theme_id": "chalet-8503807f",
+  "title": "Death at the Summit",
+  "names": {
+   "A": "Ada Ashworth",
+   "B": "Basil Blackwood",
+   "C": "Cleo Carrow",
+   "D": "Dorian Dale",
+   "E": "Esme Elwood",
+   "F": "Felix Fairweather",
+   "V": "Vaughn Vane"
+  },
+  "pronouns": {
+   "A": "she",
+   "B": "he",
+   "C": "she",
+   "D": "he",
+   "E": "she",
+   "F": "he",
+   "V": "he"
+  },
+  "areas": [
+   "Ski Room",
+   "Great Room",
+   "Boot Room",
+   "Loft"
+  ],
+  "objects": {
+   "chair": "rocking chair",
+   "carpet": "sheepskin rug",
+   "car": "snowmobile",
+   "plant": "houseplant",
+   "crate": "log pile",
+   "register": "fireplace",
+   "statue": "stone bust",
+   "piano": "upright piano",
+   "boulder": "curling stone"
+  },
+  "tags": {},
+  "victim_note": "was found dead",
+  "blurb": "A ski champion, an old rival and a long night that only one of them survived.",
+  "assets": {},
+  "setting_id": "chalet",
+  "visual": {
+   "accent": "#a23b2c",
+   "finishes": [
+    "planks",
+    "boards",
+    "herringbone",
+    "parquet",
+    "flagstone",
+    "carpet",
+    "deck",
+    "paving"
+   ],
+   "wallpapers": [
+    "log_wall",
+    "knotty_pine",
+    "tartan",
+    "stone"
+   ],
+   "variants": {
+    "carpet": [
+     "rose",
+     "sage"
+    ],
+    "planks": [
+     "oak",
+     "walnut"
+    ],
+    "flagstone": [
+     "grey"
+    ]
+   },
+   "frame": "chalet",
+   "skins": {
+    "chair": "rocking_chair",
+    "carpet": "sheepskin",
+    "car": "snowmobile",
+    "tv": "cuckoo_clock",
+    "shelf": "ski_rack",
+    "tree": "fir_tree",
+    "shrub": "snowman",
+    "crate": "firewood",
+    "box": "sled",
+    "register": "stone_fireplace",
+    "palm": "coat_stand",
+    "boulder": "curling_stone"
+   },
+   "setting": "chalet",
+   "area_finishes": {
+    "0": "boards",
+    "1": "planks",
+    "2": "flagstone",
+    "3": "planks"
+   },
+   "area_wallpapers": {
+    "0": "knotty_pine",
+    "1": "log_wall",
+    "2": "knotty_pine",
+    "3": "log_wall"
+   }
+  }
+ }
+}

@@ -1,0 +1,756 @@
+{
+ "schema": "murdoku.daily_case/1",
+ "date": "2026-11-21",
+ "n": 41,
+ "weekday": "saturday",
+ "size": 8,
+ "band": "medium",
+ "special": null,
+ "setting": "glasshouse",
+ "murderer": "B",
+ "victim": "Victor Vane",
+ "murdoku_case": {
+  "schema": "murdoku.case/1",
+  "id": "7dc3d79ffce4d2bf",
+  "variant": "classic",
+  "scene": {
+   "W": 8,
+   "H": 8,
+   "area_of": [
+    0,
+    0,
+    0,
+    0,
+    1,
+    1,
+    1,
+    1,
+    0,
+    0,
+    0,
+    0,
+    1,
+    1,
+    1,
+    1,
+    0,
+    0,
+    0,
+    0,
+    1,
+    1,
+    1,
+    1,
+    0,
+    0,
+    0,
+    0,
+    1,
+    1,
+    1,
+    1,
+    2,
+    2,
+    2,
+    2,
+    3,
+    3,
+    3,
+    3,
+    2,
+    2,
+    2,
+    2,
+    3,
+    3,
+    3,
+    3,
+    2,
+    2,
+    2,
+    2,
+    3,
+    3,
+    3,
+    3,
+    2,
+    2,
+    2,
+    2,
+    3,
+    3,
+    3,
+    3
+   ],
+   "obj_of": [
+    "box",
+    null,
+    null,
+    null,
+    null,
+    "barrel",
+    "barrel",
+    "bed",
+    null,
+    null,
+    null,
+    null,
+    "tv",
+    null,
+    "chair",
+    null,
+    "register",
+    "carpet",
+    "chair",
+    "statue",
+    null,
+    null,
+    null,
+    null,
+    null,
+    "carpet",
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    "carpet",
+    null,
+    "crate",
+    null,
+    null,
+    "bed",
+    "bed",
+    "bear",
+    "carpet",
+    null,
+    "chair",
+    null,
+    null,
+    null,
+    null,
+    "piano",
+    "boulder",
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    "statue",
+    null,
+    null,
+    null,
+    "statue",
+    null,
+    null,
+    null
+   ],
+   "props": [
+    {
+     "pid": "barrel",
+     "standable": false,
+     "cells": [
+      5,
+      6
+     ],
+     "landmark": true
+    },
+    {
+     "pid": "bear",
+     "standable": false,
+     "cells": [
+      39
+     ],
+     "landmark": false
+    },
+    {
+     "pid": "bed",
+     "standable": true,
+     "cells": [
+      7,
+      37,
+      38
+     ],
+     "landmark": false
+    },
+    {
+     "pid": "boulder",
+     "standable": false,
+     "cells": [
+      48
+     ],
+     "landmark": true
+    },
+    {
+     "pid": "box",
+     "standable": false,
+     "cells": [
+      0
+     ],
+     "landmark": false
+    },
+    {
+     "pid": "carpet",
+     "standable": true,
+     "cells": [
+      17,
+      25,
+      32,
+      40
+     ],
+     "landmark": false
+    },
+    {
+     "pid": "chair",
+     "standable": true,
+     "cells": [
+      14,
+      18,
+      42
+     ],
+     "landmark": false
+    },
+    {
+     "pid": "crate",
+     "standable": false,
+     "cells": [
+      34
+     ],
+     "landmark": false
+    },
+    {
+     "pid": "piano",
+     "standable": false,
+     "cells": [
+      47
+     ],
+     "landmark": true
+    },
+    {
+     "pid": "register",
+     "standable": false,
+     "cells": [
+      16
+     ],
+     "landmark": false
+    },
+    {
+     "pid": "statue",
+     "standable": false,
+     "cells": [
+      19,
+      56,
+      60
+     ],
+     "landmark": true
+    },
+    {
+     "pid": "tv",
+     "standable": false,
+     "cells": [
+      12
+     ],
+     "landmark": false
+    }
+   ],
+   "terrain_of": [
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor"
+   ],
+   "allow_disconnected_areas": false,
+   "doors": [
+    [
+     3,
+     4
+    ],
+    [
+     27,
+     35
+    ],
+    [
+     30,
+     38
+    ],
+    [
+     51,
+     52
+    ]
+   ]
+  },
+  "characters": [
+   "A",
+   "B",
+   "C",
+   "D",
+   "E",
+   "F",
+   "G",
+   "V"
+  ],
+  "victim": "V",
+  "tags": {},
+  "clues": [
+   {
+    "atoms": [
+     {
+      "kind": "other_beside",
+      "holder": "E",
+      "args": [
+       "crate"
+      ]
+     }
+    ]
+   },
+   {
+    "atoms": [
+     {
+      "kind": "beside",
+      "holder": "D",
+      "args": [
+       "carpet"
+      ]
+     }
+    ]
+   },
+   {
+    "atoms": [
+     {
+      "kind": "in_areas",
+      "holder": "B",
+      "args": [
+       [
+        1,
+        2,
+        3
+       ]
+      ]
+     },
+     {
+      "kind": "beside",
+      "holder": "B",
+      "args": [
+       "piano"
+      ]
+     }
+    ]
+   },
+   {
+    "atoms": [
+     {
+      "kind": "row_offset",
+      "holder": "C",
+      "args": [
+       "B",
+       -3
+      ]
+     }
+    ]
+   },
+   {
+    "atoms": [
+     {
+      "kind": "on",
+      "holder": "A",
+      "args": [
+       "chair"
+      ]
+     },
+     {
+      "kind": "in_area",
+      "holder": "A",
+      "args": [
+       0
+      ]
+     }
+    ]
+   },
+   {
+    "atoms": [
+     {
+      "kind": "on",
+      "holder": "F",
+      "args": [
+       "chair"
+      ]
+     }
+    ]
+   },
+   {
+    "atoms": [
+     {
+      "kind": "with",
+      "holder": "G",
+      "args": [
+       "A"
+      ]
+     }
+    ]
+   },
+   {
+    "atoms": [
+     {
+      "kind": "in_areas",
+      "holder": "V",
+      "args": [
+       [
+        1,
+        3
+       ]
+      ]
+     }
+    ]
+   }
+  ],
+  "solution": {
+   "A": 18,
+   "B": 55,
+   "C": 28,
+   "D": 33,
+   "E": 40,
+   "F": 14,
+   "G": 3,
+   "V": 61
+  },
+  "answer": "murderer",
+  "answer_key": "B",
+  "theme_id": null,
+  "seed": 26865840,
+  "target_band": "medium",
+  "certificate": {
+   "solved": true,
+   "depth": 15,
+   "tier_max": 3,
+   "tier_hist": {
+    "1": 10,
+    "2": 4,
+    "3": 1
+   },
+   "advanced": 1,
+   "cost": 23.0,
+   "max_width": 198,
+   "guess_free": true,
+   "place_order": [
+    "A",
+    "F",
+    "B",
+    "D",
+    "G",
+    "E",
+    "V",
+    "C"
+   ],
+   "bottleneck": {
+    "kind": "naked_subset",
+    "tier": 3,
+    "text": "C, G are confined to rows [1, 4] — between them they use all 2, so no one else can: 3 candidate(s) cleared.",
+    "removed": 3
+   },
+   "steps": [
+    {
+     "kind": "setup",
+     "tier": 1,
+     "text": "Mark the cells each clue allows. 12 cell(s) are unusable (a table, shelf, plant or the like stands there); 198 candidate placements remain across 8 people.",
+     "removed": 0
+    },
+    {
+     "kind": "single",
+     "tier": 1,
+     "text": "Only one square is still possible for A: r3c3. Row 3 and column 3 are now closed to everyone else.",
+     "removed": 45,
+     "placed": [
+      "A",
+      18
+     ]
+    },
+    {
+     "kind": "single",
+     "tier": 1,
+     "text": "Only one square is still possible for F: r2c7. Row 2 and column 7 are now closed to everyone else.",
+     "removed": 43,
+     "placed": [
+      "F",
+      14
+     ]
+    },
+    {
+     "kind": "single",
+     "tier": 1,
+     "text": "Only one square is still possible for B: r7c8. Row 7 and column 8 are now closed to everyone else.",
+     "removed": 30,
+     "placed": [
+      "B",
+      55
+     ]
+    },
+    {
+     "kind": "relational",
+     "tier": 2,
+     "text": "Cross-checking the clue linking C and B (row_offset) removes 16 candidate(s).",
+     "removed": 16
+    },
+    {
+     "kind": "relational",
+     "tier": 2,
+     "text": "Cross-checking the clue linking G and A (with) removes 16 candidate(s).",
+     "removed": 16
+    },
+    {
+     "kind": "tagshare",
+     "tier": 2,
+     "text": "E shared an area with someone beside a crate, so areas where that is no longer possible are ruled out (13 candidate(s) cleared).",
+     "removed": 13
+    },
+    {
+     "kind": "tagshare",
+     "tier": 2,
+     "text": "E is in area 3 and only D can be the one beside a crate, so D is confined to it (5 cleared).",
+     "removed": 5
+    },
+    {
+     "kind": "single",
+     "tier": 1,
+     "text": "Only one square is still possible for D: r5c2. Row 5 and column 2 are now closed to everyone else.",
+     "removed": 10,
+     "placed": [
+      "D",
+      33
+     ]
+    },
+    {
+     "kind": "naked_subset",
+     "tier": 3,
+     "text": "C, G are confined to rows [1, 4] — between them they use all 2, so no one else can: 3 candidate(s) cleared.",
+     "removed": 3
+    },
+    {
+     "kind": "line",
+     "tier": 1,
+     "text": "G is the only person who can be in row 1, and every row holds someone — so G is there.",
+     "removed": 2
+    },
+    {
+     "kind": "single",
+     "tier": 1,
+     "text": "Only one square is still possible for G: r1c4. Row 1 and column 4 are now closed to everyone else.",
+     "removed": 3,
+     "placed": [
+      "G",
+      3
+     ]
+    },
+    {
+     "kind": "single",
+     "tier": 1,
+     "text": "Only one square is still possible for E: r6c1. Row 6 and column 1 are now closed to everyone else.",
+     "removed": 3,
+     "placed": [
+      "E",
+      40
+     ]
+    },
+    {
+     "kind": "single",
+     "tier": 1,
+     "text": "Only one square is still possible for V: r8c6. Row 8 and column 6 are now closed to everyone else.",
+     "removed": 1,
+     "placed": [
+      "V",
+      61
+     ]
+    },
+    {
+     "kind": "verdict",
+     "tier": 1,
+     "text": "C is at r4c5.",
+     "removed": 0,
+     "placed": [
+      "C",
+      28
+     ]
+    }
+   ]
+  },
+  "meta": {
+   "quality_version": "scene-design-v1",
+   "implied_atoms_removed": 0,
+   "scene_spec": {
+    "schema": "murdoku.scene_spec/1",
+    "anchors_per_area": {},
+    "blocker_rate": 0.2,
+    "furniture_rate": 0.16
+   }
+  }
+ },
+ "murdoku_theme": {
+  "theme_id": "glasshouse-72b86492",
+  "title": "Blooming Murder",
+  "names": {
+   "A": "Ada Ashworth",
+   "B": "Basil Blackwood",
+   "C": "Cleo Carrow",
+   "D": "Dorian Dale",
+   "E": "Esme Elwood",
+   "F": "Felix Fairweather",
+   "G": "Greta Gale",
+   "V": "Victor Vane"
+  },
+  "pronouns": {
+   "A": "she",
+   "B": "he",
+   "C": "she",
+   "D": "he",
+   "E": "she",
+   "F": "he",
+   "G": "she",
+   "V": "he"
+  },
+  "areas": [
+   "Head Gardener's Office",
+   "Kitchen Garden",
+   "Tea Pavilion",
+   "Rose Garden"
+  ],
+  "objects": {
+   "bed": "raised bed",
+   "chair": "armchair",
+   "carpet": "rug",
+   "tv": "beehive",
+   "crate": "stack of pots",
+   "box": "watering can",
+   "register": "shop till",
+   "bear": "garden gnome",
+   "statue": "fountain",
+   "piano": "fern case",
+   "boulder": "rockery stone",
+   "barrel": "rain barrel"
+  },
+  "tags": {},
+  "victim_note": "was found dead",
+  "blurb": "The rarest bloom in the country is about to open, and someone will not live to see it.",
+  "assets": {},
+  "setting_id": "glasshouse",
+  "visual": {
+   "accent": "#2f7d5f",
+   "finishes": [
+    "terracotta",
+    "flagstone",
+    "paving",
+    "checker",
+    "lawn",
+    "boards",
+    "planks",
+    "marble"
+   ],
+   "wallpapers": [
+    "glass_pane",
+    "trellis",
+    "whitewash",
+    "brick"
+   ],
+   "variants": {
+    "carpet": [
+     "sage"
+    ],
+    "checker": [
+     "sage"
+    ],
+    "flagstone": [
+     "sandstone",
+     "grey"
+    ]
+   },
+   "frame": "glasshouse",
+   "skins": {
+    "bed": "raised_bed",
+    "table": "potting_bench",
+    "tv": "beehive",
+    "plant": "orchid",
+    "tree": "lemon_tree",
+    "crate": "pot_stack",
+    "box": "watering_can",
+    "bear": "gnome",
+    "statue": "fountain",
+    "piano": "wardian_case",
+    "barrel": "rain_barrel"
+   },
+   "setting": "glasshouse",
+   "area_finishes": {
+    "0": "planks",
+    "1": "lawn",
+    "2": "checker",
+    "3": "lawn"
+   },
+   "area_wallpapers": {
+    "0": "whitewash",
+    "1": "trellis",
+    "2": "trellis",
+    "3": "trellis"
+   }
+  }
+ }
+}

@@ -1,0 +1,786 @@
+{
+ "schema": "murdoku.daily_case/1",
+ "date": "2026-10-30",
+ "n": 19,
+ "weekday": "friday",
+ "size": 8,
+ "band": "medium",
+ "special": null,
+ "setting": "manor",
+ "murderer": "A",
+ "victim": "Violet Vane",
+ "murdoku_case": {
+  "schema": "murdoku.case/1",
+  "id": "6b60980d8a66d1e4",
+  "variant": "classic",
+  "scene": {
+   "W": 8,
+   "H": 8,
+   "area_of": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    1,
+    2,
+    2,
+    3,
+    3,
+    0,
+    3,
+    1,
+    1,
+    2,
+    2,
+    3,
+    3,
+    3,
+    3,
+    1,
+    1,
+    2,
+    2,
+    3,
+    3,
+    3,
+    3,
+    1,
+    1,
+    2,
+    3,
+    3,
+    4,
+    4,
+    4,
+    1,
+    1,
+    2,
+    2,
+    4,
+    4,
+    4,
+    4,
+    1,
+    1,
+    1,
+    4,
+    4,
+    4,
+    4,
+    4
+   ],
+   "obj_of": [
+    null,
+    null,
+    "chair",
+    "statue",
+    null,
+    null,
+    "shelf",
+    null,
+    null,
+    null,
+    null,
+    "barrel",
+    "carpet",
+    "carpet",
+    null,
+    null,
+    "boulder",
+    null,
+    null,
+    null,
+    "tree",
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    "boulder",
+    "piano",
+    "bear",
+    null,
+    null,
+    "boulder",
+    null,
+    null,
+    "carpet",
+    "bed",
+    "bed",
+    "palm",
+    "car",
+    null,
+    null,
+    "car",
+    null,
+    null,
+    null,
+    "chair",
+    null,
+    null,
+    "box",
+    "car",
+    null,
+    null,
+    null,
+    null,
+    "statue",
+    null
+   ],
+   "props": [
+    {
+     "pid": "barrel",
+     "standable": false,
+     "cells": [
+      11
+     ],
+     "landmark": true
+    },
+    {
+     "pid": "bear",
+     "standable": false,
+     "cells": [
+      36
+     ],
+     "landmark": false
+    },
+    {
+     "pid": "bed",
+     "standable": true,
+     "cells": [
+      43,
+      44
+     ],
+     "landmark": false
+    },
+    {
+     "pid": "boulder",
+     "standable": false,
+     "cells": [
+      16,
+      34,
+      39
+     ],
+     "landmark": true
+    },
+    {
+     "pid": "box",
+     "standable": false,
+     "cells": [
+      56
+     ],
+     "landmark": false
+    },
+    {
+     "pid": "car",
+     "standable": true,
+     "cells": [
+      46,
+      49,
+      57
+     ],
+     "landmark": false
+    },
+    {
+     "pid": "carpet",
+     "standable": true,
+     "cells": [
+      12,
+      13,
+      42
+     ],
+     "landmark": false
+    },
+    {
+     "pid": "chair",
+     "standable": true,
+     "cells": [
+      2,
+      53
+     ],
+     "landmark": false
+    },
+    {
+     "pid": "palm",
+     "standable": false,
+     "cells": [
+      45
+     ],
+     "landmark": false
+    },
+    {
+     "pid": "piano",
+     "standable": false,
+     "cells": [
+      35
+     ],
+     "landmark": true
+    },
+    {
+     "pid": "shelf",
+     "standable": false,
+     "cells": [
+      6
+     ],
+     "landmark": false
+    },
+    {
+     "pid": "statue",
+     "standable": false,
+     "cells": [
+      3,
+      62
+     ],
+     "landmark": true
+    },
+    {
+     "pid": "tree",
+     "standable": false,
+     "cells": [
+      20
+     ],
+     "landmark": false
+    }
+   ],
+   "terrain_of": [
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor"
+   ],
+   "allow_disconnected_areas": false,
+   "doors": [
+    [
+     9,
+     17
+    ],
+    [
+     10,
+     18
+    ],
+    [
+     22,
+     30
+    ],
+    [
+     49,
+     50
+    ],
+    [
+     51,
+     59
+    ]
+   ]
+  },
+  "characters": [
+   "A",
+   "B",
+   "C",
+   "D",
+   "E",
+   "F",
+   "G",
+   "V"
+  ],
+  "victim": "V",
+  "tags": {},
+  "clues": [
+   {
+    "atoms": [
+     {
+      "kind": "alone",
+      "holder": "G",
+      "args": []
+     }
+    ]
+   },
+   {
+    "atoms": [
+     {
+      "kind": "col_offset",
+      "holder": "E",
+      "args": [
+       "G",
+       -2
+      ]
+     },
+     {
+      "kind": "in_area",
+      "holder": "E",
+      "args": [
+       1
+      ]
+     }
+    ]
+   },
+   {
+    "atoms": [
+     {
+      "kind": "not_in_corner",
+      "holder": "F",
+      "args": []
+     }
+    ]
+   },
+   {
+    "atoms": [
+     {
+      "kind": "with",
+      "holder": "B",
+      "args": [
+       "F"
+      ]
+     },
+     {
+      "kind": "only_on",
+      "holder": "B",
+      "args": [
+       "bed"
+      ]
+     }
+    ]
+   },
+   {
+    "atoms": [
+     {
+      "kind": "beside",
+      "holder": "D",
+      "args": [
+       "palm"
+      ]
+     }
+    ]
+   },
+   {
+    "atoms": [
+     {
+      "kind": "on",
+      "holder": "C",
+      "args": [
+       "car"
+      ]
+     }
+    ]
+   },
+   {
+    "atoms": [
+     {
+      "kind": "only_on",
+      "holder": "A",
+      "args": [
+       "carpet"
+      ]
+     }
+    ]
+   },
+   {
+    "atoms": [
+     {
+      "kind": "beside",
+      "holder": "E",
+      "args": [
+       "boulder"
+      ]
+     }
+    ]
+   },
+   {
+    "atoms": [
+     {
+      "kind": "on",
+      "holder": "D",
+      "args": [
+       "chair"
+      ]
+     }
+    ]
+   }
+  ],
+  "solution": {
+   "A": 12,
+   "B": 43,
+   "C": 57,
+   "D": 53,
+   "E": 24,
+   "F": 38,
+   "G": 18,
+   "V": 7
+  },
+  "answer": "murderer",
+  "answer_key": "A",
+  "theme_id": null,
+  "seed": 119161,
+  "target_band": "medium",
+  "certificate": {
+   "solved": true,
+   "depth": 18,
+   "tier_max": 3,
+   "tier_hist": {
+    "1": 13,
+    "2": 4,
+    "3": 1
+   },
+   "advanced": 1,
+   "cost": 26.0,
+   "max_width": 148,
+   "guess_free": true,
+   "place_order": [
+    "D",
+    "C",
+    "E",
+    "F",
+    "A",
+    "B",
+    "G",
+    "V"
+   ],
+   "bottleneck": {
+    "kind": "naked_subset",
+    "tier": 3,
+    "text": "A, B are confined to rows [2, 6] — between them they use all 2, so no one else can: 11 candidate(s) cleared.",
+    "removed": 11
+   },
+   "steps": [
+    {
+     "kind": "setup",
+     "tier": 1,
+     "text": "Mark the cells each clue allows. 12 cell(s) are unusable (a table, shelf, plant or the like stands there); 148 candidate placements remain across 8 people.",
+     "removed": 0
+    },
+    {
+     "kind": "single",
+     "tier": 1,
+     "text": "Only one square is still possible for D: r7c6. Row 7 and column 6 are now closed to everyone else.",
+     "removed": 40,
+     "placed": [
+      "D",
+      53
+     ]
+    },
+    {
+     "kind": "exclusive",
+     "tier": 1,
+     "text": "B was the only person on a bed — every other person is wiped off those 2 square(s) (4 candidate(s) cleared).",
+     "removed": 4
+    },
+    {
+     "kind": "exclusive",
+     "tier": 1,
+     "text": "A was the only person on a carpet — every other person is wiped off those 3 square(s) (6 candidate(s) cleared).",
+     "removed": 6
+    },
+    {
+     "kind": "relational",
+     "tier": 2,
+     "text": "Cross-checking the clue linking E and G (col_offset) removes 26 candidate(s).",
+     "removed": 26
+    },
+    {
+     "kind": "relational",
+     "tier": 2,
+     "text": "Cross-checking the clue linking B and F (with) removes 17 candidate(s).",
+     "removed": 17
+    },
+    {
+     "kind": "alone",
+     "tier": 2,
+     "text": "Someone else is pinned to an area G would have had to itself — 2 candidate(s) cleared.",
+     "removed": 2
+    },
+    {
+     "kind": "naked_subset",
+     "tier": 3,
+     "text": "A, B are confined to rows [2, 6] — between them they use all 2, so no one else can: 11 candidate(s) cleared.",
+     "removed": 11
+    },
+    {
+     "kind": "single",
+     "tier": 1,
+     "text": "Only one square is still possible for C: r8c2. Row 8 and column 2 are now closed to everyone else.",
+     "removed": 10,
+     "placed": [
+      "C",
+      57
+     ]
+    },
+    {
+     "kind": "single",
+     "tier": 1,
+     "text": "Only one square is still possible for E: r4c1. Row 4 and column 1 are now closed to everyone else.",
+     "removed": 13,
+     "placed": [
+      "E",
+      24
+     ]
+    },
+    {
+     "kind": "single",
+     "tier": 1,
+     "text": "Only one square is still possible for F: r5c7. Row 5 and column 7 are now closed to everyone else.",
+     "removed": 2,
+     "placed": [
+      "F",
+      38
+     ]
+    },
+    {
+     "kind": "line",
+     "tier": 1,
+     "text": "A is the only person who can be in row 2, and every row holds someone — so A is there.",
+     "removed": 1
+    },
+    {
+     "kind": "single",
+     "tier": 1,
+     "text": "Only one square is still possible for A: r2c5. Row 2 and column 5 are now closed to everyone else.",
+     "removed": 2,
+     "placed": [
+      "A",
+      12
+     ]
+    },
+    {
+     "kind": "single",
+     "tier": 1,
+     "text": "Only one square is still possible for B: r6c4. Row 6 and column 4 are now closed to everyone else.",
+     "removed": 2,
+     "placed": [
+      "B",
+      43
+     ]
+    },
+    {
+     "kind": "line",
+     "tier": 1,
+     "text": "V is the only person who can be in column 8, and every column holds someone — so V is there.",
+     "removed": 2
+    },
+    {
+     "kind": "alone",
+     "tier": 2,
+     "text": "Someone else is pinned to an area G would have had to itself — 1 candidate(s) cleared.",
+     "removed": 1
+    },
+    {
+     "kind": "single",
+     "tier": 1,
+     "text": "Only one square is still possible for G: r3c3. Row 3 and column 3 are now closed to everyone else.",
+     "removed": 1,
+     "placed": [
+      "G",
+      18
+     ]
+    },
+    {
+     "kind": "verdict",
+     "tier": 1,
+     "text": "V is at r1c8.",
+     "removed": 0,
+     "placed": [
+      "V",
+      7
+     ]
+    }
+   ]
+  },
+  "meta": {
+   "quality_version": "scene-design-v1",
+   "implied_atoms_removed": 0,
+   "scene_spec": {
+    "schema": "murdoku.scene_spec/1",
+    "anchors_per_area": {},
+    "blocker_rate": 0.2,
+    "furniture_rate": 0.16
+   }
+  }
+ },
+ "murdoku_theme": {
+  "theme_id": "manor-8e403d0e",
+  "title": "The Uninvited Guest",
+  "names": {
+   "A": "Ada Ashworth",
+   "B": "Basil Blackwood",
+   "C": "Cleo Carrow",
+   "D": "Dorian Dale",
+   "E": "Esme Elwood",
+   "F": "Felix Fairweather",
+   "G": "Greta Gale",
+   "V": "Violet Vane"
+  },
+  "pronouns": {
+   "A": "she",
+   "B": "he",
+   "C": "she",
+   "D": "he",
+   "E": "she",
+   "F": "he",
+   "G": "she",
+   "V": "she"
+  },
+  "areas": [
+   "Library",
+   "Coach House",
+   "Drawing Room",
+   "Morning Room",
+   "Music Room"
+  ],
+  "objects": {
+   "bed": "chaise longue",
+   "chair": "wingback chair",
+   "carpet": "Persian rug",
+   "car": "motor car",
+   "shelf": "bookcase",
+   "tree": "potted bay tree",
+   "box": "hat box",
+   "palm": "parlour palm",
+   "bear": "bearskin rug",
+   "statue": "marble bust",
+   "piano": "grand piano",
+   "boulder": "millstone",
+   "barrel": "wine cask"
+  },
+  "tags": {},
+  "victim_note": "was found dead",
+  "blurb": "Fog over the lawns, a cold supper and a butler who saw more than anyone should.",
+  "assets": {},
+  "setting_id": "manor",
+  "visual": {
+   "accent": "#3d6a5b",
+   "tints": [
+    "#f1d8b4",
+    "#d3e4c3",
+    "#efe0a6",
+    "#c6dfe2",
+    "#f1cdc4",
+    "#d9cfeb",
+    "#cde8da",
+    "#e9d2a0",
+    "#c9d7f1",
+    "#ecc8db",
+    "#dde2c0",
+    "#bfe1d9"
+   ],
+   "finishes": [
+    "parquet",
+    "planks",
+    "herringbone",
+    "carpet",
+    "marble",
+    "flagstone",
+    "checker",
+    "boards"
+   ],
+   "frame": "manor",
+   "skins": {
+    "chair": "wingback",
+    "bed": "chaise",
+    "register": "writing_desk",
+    "tv": "cabinet_radio",
+    "plant": "fern",
+    "tree": "potted_bay",
+    "flowers": "lilies",
+    "shrub": "box_hedge",
+    "box": "hatbox",
+    "bear": "bearskin",
+    "boulder": "millstone",
+    "barrel": "wine_cask"
+   },
+   "setting": "manor",
+   "area_finishes": {
+    "0": "parquet",
+    "1": "boards",
+    "2": "carpet",
+    "3": "marble",
+    "4": "parquet"
+   },
+   "area_wallpapers": {
+    "0": "panel_wood",
+    "1": "brick",
+    "2": "damask_rose",
+    "3": "floral_yellow",
+    "4": "panel_blue"
+   }
+  }
+ }
+}

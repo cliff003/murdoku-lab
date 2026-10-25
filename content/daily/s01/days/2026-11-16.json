@@ -1,0 +1,576 @@
+{
+ "schema": "murdoku.daily_case/1",
+ "date": "2026-11-16",
+ "n": 36,
+ "weekday": "monday",
+ "size": 6,
+ "band": "easy",
+ "special": null,
+ "setting": "chalet",
+ "murderer": "B",
+ "victim": "Vera Vane",
+ "murdoku_case": {
+  "schema": "murdoku.case/1",
+  "id": "2b5245060b1f1653",
+  "variant": "classic",
+  "scene": {
+   "W": 6,
+   "H": 6,
+   "area_of": [
+    2,
+    2,
+    0,
+    0,
+    0,
+    0,
+    3,
+    2,
+    2,
+    0,
+    0,
+    0,
+    3,
+    3,
+    1,
+    0,
+    0,
+    0,
+    3,
+    3,
+    1,
+    1,
+    1,
+    0,
+    4,
+    4,
+    4,
+    1,
+    1,
+    1,
+    4,
+    4,
+    1,
+    1,
+    1,
+    1
+   ],
+   "obj_of": [
+    "boulder",
+    "carpet",
+    null,
+    null,
+    null,
+    null,
+    "flowers",
+    null,
+    null,
+    null,
+    null,
+    "chair",
+    "car",
+    null,
+    null,
+    null,
+    null,
+    "statue",
+    null,
+    null,
+    null,
+    null,
+    null,
+    "shelf",
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    "chair",
+    "barrel",
+    null,
+    "tv",
+    "piano",
+    "chair"
+   ],
+   "props": [
+    {
+     "pid": "barrel",
+     "standable": false,
+     "cells": [
+      31
+     ],
+     "landmark": true
+    },
+    {
+     "pid": "boulder",
+     "standable": false,
+     "cells": [
+      0
+     ],
+     "landmark": true
+    },
+    {
+     "pid": "car",
+     "standable": true,
+     "cells": [
+      12
+     ],
+     "landmark": false
+    },
+    {
+     "pid": "carpet",
+     "standable": true,
+     "cells": [
+      1
+     ],
+     "landmark": false
+    },
+    {
+     "pid": "chair",
+     "standable": true,
+     "cells": [
+      11,
+      30,
+      35
+     ],
+     "landmark": false
+    },
+    {
+     "pid": "flowers",
+     "standable": false,
+     "cells": [
+      6
+     ],
+     "landmark": false
+    },
+    {
+     "pid": "piano",
+     "standable": false,
+     "cells": [
+      34
+     ],
+     "landmark": true
+    },
+    {
+     "pid": "shelf",
+     "standable": false,
+     "cells": [
+      23
+     ],
+     "landmark": false
+    },
+    {
+     "pid": "statue",
+     "standable": false,
+     "cells": [
+      17
+     ],
+     "landmark": true
+    },
+    {
+     "pid": "tv",
+     "standable": false,
+     "cells": [
+      33
+     ],
+     "landmark": false
+    }
+   ],
+   "terrain_of": [
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor"
+   ],
+   "allow_disconnected_areas": false,
+   "doors": [
+    [
+     1,
+     2
+    ],
+    [
+     8,
+     14
+    ],
+    [
+     13,
+     14
+    ],
+    [
+     15,
+     21
+    ],
+    [
+     26,
+     27
+    ]
+   ]
+  },
+  "characters": [
+   "A",
+   "B",
+   "C",
+   "D",
+   "E",
+   "V"
+  ],
+  "victim": "V",
+  "tags": {},
+  "clues": [
+   {
+    "atoms": [
+     {
+      "kind": "not_in_corner",
+      "holder": "E",
+      "args": []
+     },
+     {
+      "kind": "beside",
+      "holder": "E",
+      "args": [
+       "statue"
+      ]
+     }
+    ]
+   },
+   {
+    "atoms": [
+     {
+      "kind": "compass",
+      "holder": "A",
+      "args": [
+       "E",
+       1,
+       1
+      ]
+     }
+    ]
+   },
+   {
+    "atoms": [
+     {
+      "kind": "alone_with",
+      "holder": "C",
+      "args": [
+       "A"
+      ]
+     }
+    ]
+   },
+   {
+    "atoms": [
+     {
+      "kind": "only_on",
+      "holder": "D",
+      "args": [
+       "chair"
+      ]
+     }
+    ]
+   },
+   {
+    "atoms": [
+     {
+      "kind": "other_beside",
+      "holder": "V",
+      "args": [
+       "boulder"
+      ]
+     }
+    ]
+   }
+  ],
+  "solution": {
+   "A": 29,
+   "B": 1,
+   "C": 21,
+   "D": 30,
+   "E": 16,
+   "V": 8
+  },
+  "answer": "murderer",
+  "answer_key": "B",
+  "theme_id": null,
+  "seed": 60912589,
+  "target_band": "easy",
+  "certificate": {
+   "solved": true,
+   "depth": 13,
+   "tier_max": 2,
+   "tier_hist": {
+    "1": 8,
+    "2": 5
+   },
+   "advanced": 0,
+   "cost": 18.0,
+   "max_width": 121,
+   "guess_free": true,
+   "place_order": [
+    "E",
+    "A",
+    "D",
+    "B",
+    "V",
+    "C"
+   ],
+   "bottleneck": {
+    "kind": "relational",
+    "tier": 2,
+    "text": "Cross-checking the clue linking A and E (compass) removes 16 candidate(s).",
+    "removed": 16
+   },
+   "steps": [
+    {
+     "kind": "setup",
+     "tier": 1,
+     "text": "Mark the cells each clue allows. 7 cell(s) are unusable (a table, shelf, plant or the like stands there); 121 candidate placements remain across 6 people.",
+     "removed": 0
+    },
+    {
+     "kind": "exclusive",
+     "tier": 1,
+     "text": "D was the only person on a chair — every other person is wiped off those 3 square(s) (13 candidate(s) cleared).",
+     "removed": 13
+    },
+    {
+     "kind": "single",
+     "tier": 1,
+     "text": "Only one square is still possible for E: r3c5. Row 3 and column 5 are now closed to everyone else.",
+     "removed": 36,
+     "placed": [
+      "E",
+      16
+     ]
+    },
+    {
+     "kind": "relational",
+     "tier": 2,
+     "text": "Cross-checking the clue linking A and E (compass) removes 16 candidate(s).",
+     "removed": 16
+    },
+    {
+     "kind": "single",
+     "tier": 1,
+     "text": "Only one square is still possible for A: r5c6. Row 5 and column 6 are now closed to everyone else.",
+     "removed": 20,
+     "placed": [
+      "A",
+      29
+     ]
+    },
+    {
+     "kind": "single",
+     "tier": 1,
+     "text": "Only one square is still possible for D: r6c1. Row 6 and column 1 are now closed to everyone else.",
+     "removed": 6,
+     "placed": [
+      "D",
+      30
+     ]
+    },
+    {
+     "kind": "relational",
+     "tier": 2,
+     "text": "Cross-checking the clue linking C and A (alone_with) removes 7 candidate(s).",
+     "removed": 7
+    },
+    {
+     "kind": "alone",
+     "tier": 2,
+     "text": "C was alone with A and can only be in area 1, so nobody else can be there: 4 candidate(s) cleared.",
+     "removed": 4
+    },
+    {
+     "kind": "tagshare",
+     "tier": 2,
+     "text": "V shared an area with someone beside a boulder, so areas where that is no longer possible are ruled out (4 candidate(s) cleared).",
+     "removed": 4
+    },
+    {
+     "kind": "tagshare",
+     "tier": 2,
+     "text": "V is in area 3 and only B can be the one beside a boulder, so B is confined to it (6 cleared).",
+     "removed": 6
+    },
+    {
+     "kind": "single",
+     "tier": 1,
+     "text": "Only one square is still possible for B: r1c2. Row 1 and column 2 are now closed to everyone else.",
+     "removed": 2,
+     "placed": [
+      "B",
+      1
+     ]
+    },
+    {
+     "kind": "single",
+     "tier": 1,
+     "text": "Only one square is still possible for V: r2c3. Row 2 and column 3 are now closed to everyone else.",
+     "removed": 1,
+     "placed": [
+      "V",
+      8
+     ]
+    },
+    {
+     "kind": "verdict",
+     "tier": 1,
+     "text": "C is at r4c4.",
+     "removed": 0,
+     "placed": [
+      "C",
+      21
+     ]
+    }
+   ]
+  },
+  "meta": {
+   "quality_version": "scene-design-v1",
+   "implied_atoms_removed": 0,
+   "scene_spec": {
+    "schema": "murdoku.scene_spec/1",
+    "anchors_per_area": {},
+    "blocker_rate": 0.2,
+    "furniture_rate": 0.16
+   }
+  }
+ },
+ "murdoku_theme": {
+  "theme_id": "chalet-4421a183",
+  "title": "The Alpine Alibi",
+  "names": {
+   "A": "Ada Ashworth",
+   "B": "Basil Blackwood",
+   "C": "Cleo Carrow",
+   "D": "Dorian Dale",
+   "E": "Esme Elwood",
+   "V": "Vera Vane"
+  },
+  "pronouns": {
+   "A": "she",
+   "B": "he",
+   "C": "she",
+   "D": "he",
+   "E": "she",
+   "V": "she"
+  },
+  "areas": [
+   "Library",
+   "Great Room",
+   "Wine Cellar",
+   "Ski Room",
+   "Sauna"
+  ],
+  "objects": {
+   "chair": "rocking chair",
+   "carpet": "sheepskin rug",
+   "car": "snowmobile",
+   "tv": "cuckoo clock",
+   "shelf": "ski rack",
+   "flowers": "alpine flowers",
+   "statue": "stone bust",
+   "piano": "upright piano",
+   "boulder": "curling stone",
+   "barrel": "cider keg"
+  },
+  "tags": {},
+  "victim_note": "was found dead",
+  "blurb": "The pass is closed, the phone line is down, and someone at the lodge has very cold blood.",
+  "assets": {},
+  "setting_id": "chalet",
+  "visual": {
+   "accent": "#a23b2c",
+   "finishes": [
+    "planks",
+    "boards",
+    "herringbone",
+    "parquet",
+    "flagstone",
+    "carpet",
+    "deck",
+    "paving"
+   ],
+   "wallpapers": [
+    "log_wall",
+    "knotty_pine",
+    "tartan",
+    "stone"
+   ],
+   "variants": {
+    "carpet": [
+     "rose",
+     "sage"
+    ],
+    "planks": [
+     "oak",
+     "walnut"
+    ],
+    "flagstone": [
+     "grey"
+    ]
+   },
+   "frame": "chalet",
+   "skins": {
+    "chair": "rocking_chair",
+    "carpet": "sheepskin",
+    "car": "snowmobile",
+    "tv": "cuckoo_clock",
+    "shelf": "ski_rack",
+    "tree": "fir_tree",
+    "shrub": "snowman",
+    "crate": "firewood",
+    "box": "sled",
+    "register": "stone_fireplace",
+    "palm": "coat_stand",
+    "boulder": "curling_stone"
+   },
+   "setting": "chalet",
+   "area_finishes": {
+    "0": "parquet",
+    "1": "planks",
+    "2": "flagstone",
+    "3": "boards",
+    "4": "boards"
+   },
+   "area_wallpapers": {
+    "0": "tartan",
+    "1": "log_wall",
+    "2": "stone",
+    "3": "knotty_pine",
+    "4": "knotty_pine"
+   }
+  }
+ }
+}

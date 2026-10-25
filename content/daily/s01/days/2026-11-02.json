@@ -1,0 +1,539 @@
+{
+ "schema": "murdoku.daily_case/1",
+ "date": "2026-11-02",
+ "n": 22,
+ "weekday": "monday",
+ "size": 6,
+ "band": "easy",
+ "special": null,
+ "setting": "library",
+ "murderer": "E",
+ "victim": "Valentina Vane",
+ "murdoku_case": {
+  "schema": "murdoku.case/1",
+  "id": "26ae20aae7832f95",
+  "variant": "classic",
+  "scene": {
+   "W": 6,
+   "H": 6,
+   "area_of": [
+    0,
+    0,
+    1,
+    1,
+    1,
+    1,
+    0,
+    0,
+    1,
+    1,
+    1,
+    1,
+    0,
+    0,
+    2,
+    2,
+    2,
+    2,
+    0,
+    0,
+    0,
+    0,
+    2,
+    2,
+    0,
+    0,
+    2,
+    2,
+    2,
+    2,
+    0,
+    2,
+    2,
+    2,
+    2,
+    2
+   ],
+   "obj_of": [
+    null,
+    null,
+    null,
+    null,
+    "plant",
+    "chair",
+    null,
+    null,
+    null,
+    null,
+    "shelf",
+    null,
+    null,
+    "carpet",
+    null,
+    null,
+    null,
+    null,
+    null,
+    "carpet",
+    "piano",
+    "plant",
+    null,
+    "chair",
+    null,
+    null,
+    null,
+    null,
+    "boulder",
+    "barrel",
+    null,
+    null,
+    null,
+    null,
+    "carpet",
+    "statue"
+   ],
+   "props": [
+    {
+     "pid": "barrel",
+     "standable": false,
+     "cells": [
+      29
+     ],
+     "landmark": true
+    },
+    {
+     "pid": "boulder",
+     "standable": false,
+     "cells": [
+      28
+     ],
+     "landmark": true
+    },
+    {
+     "pid": "carpet",
+     "standable": true,
+     "cells": [
+      13,
+      19,
+      34
+     ],
+     "landmark": false
+    },
+    {
+     "pid": "chair",
+     "standable": true,
+     "cells": [
+      5,
+      23
+     ],
+     "landmark": false
+    },
+    {
+     "pid": "piano",
+     "standable": false,
+     "cells": [
+      20
+     ],
+     "landmark": true
+    },
+    {
+     "pid": "plant",
+     "standable": false,
+     "cells": [
+      4,
+      21
+     ],
+     "landmark": false
+    },
+    {
+     "pid": "shelf",
+     "standable": false,
+     "cells": [
+      10
+     ],
+     "landmark": false
+    },
+    {
+     "pid": "statue",
+     "standable": false,
+     "cells": [
+      35
+     ],
+     "landmark": true
+    }
+   ],
+   "terrain_of": [
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor",
+    "floor"
+   ],
+   "allow_disconnected_areas": false,
+   "doors": [
+    [
+     7,
+     8
+    ],
+    [
+     9,
+     15
+    ]
+   ]
+  },
+  "characters": [
+   "A",
+   "B",
+   "C",
+   "D",
+   "E",
+   "V"
+  ],
+  "victim": "V",
+  "tags": {},
+  "clues": [
+   {
+    "atoms": [
+     {
+      "kind": "in_corner",
+      "holder": "E",
+      "args": []
+     }
+    ]
+   },
+   {
+    "atoms": [
+     {
+      "kind": "col_offset",
+      "holder": "B",
+      "args": [
+       "A",
+       1
+      ]
+     },
+     {
+      "kind": "only_on",
+      "holder": "B",
+      "args": [
+       "carpet"
+      ]
+     }
+    ]
+   },
+   {
+    "atoms": [
+     {
+      "kind": "other_beside",
+      "holder": "C",
+      "args": [
+       "barrel"
+      ]
+     }
+    ]
+   },
+   {
+    "atoms": [
+     {
+      "kind": "only_beside",
+      "holder": "A",
+      "args": [
+       "plant"
+      ]
+     }
+    ]
+   },
+   {
+    "atoms": [
+     {
+      "kind": "on",
+      "holder": "D",
+      "args": [
+       "chair"
+      ]
+     }
+    ]
+   }
+  ],
+  "solution": {
+   "A": 3,
+   "B": 34,
+   "C": 14,
+   "D": 23,
+   "E": 25,
+   "V": 6
+  },
+  "answer": "murderer",
+  "answer_key": "E",
+  "theme_id": null,
+  "seed": 23446388,
+  "target_band": "easy",
+  "certificate": {
+   "solved": true,
+   "depth": 13,
+   "tier_max": 2,
+   "tier_hist": {
+    "1": 11,
+    "2": 2
+   },
+   "advanced": 0,
+   "cost": 15.0,
+   "max_width": 77,
+   "guess_free": true,
+   "place_order": [
+    "D",
+    "A",
+    "B",
+    "E",
+    "C",
+    "V"
+   ],
+   "bottleneck": {
+    "kind": "tagshare",
+    "tier": 2,
+    "text": "C shared an area with someone beside a barrel, so areas where that is no longer possible are ruled out (6 candidate(s) cleared).",
+    "removed": 6
+   },
+   "steps": [
+    {
+     "kind": "setup",
+     "tier": 1,
+     "text": "Mark the cells each clue allows. 7 cell(s) are unusable (a table, shelf, plant or the like stands there); 77 candidate placements remain across 6 people.",
+     "removed": 0
+    },
+    {
+     "kind": "exclusive",
+     "tier": 1,
+     "text": "B was the only person on a carpet — every other person is wiped off those 3 square(s) (6 candidate(s) cleared).",
+     "removed": 6
+    },
+    {
+     "kind": "exclusive",
+     "tier": 1,
+     "text": "A was the only person beside a plant — every other person is wiped off those 2 square(s) (6 candidate(s) cleared).",
+     "removed": 6
+    },
+    {
+     "kind": "single",
+     "tier": 1,
+     "text": "Only one square is still possible for D: r4c6. Row 4 and column 6 are now closed to everyone else.",
+     "removed": 14,
+     "placed": [
+      "D",
+      23
+     ]
+    },
+    {
+     "kind": "single",
+     "tier": 1,
+     "text": "Only one square is still possible for A: r1c4. Row 1 and column 4 are now closed to everyone else.",
+     "removed": 17,
+     "placed": [
+      "A",
+      3
+     ]
+    },
+    {
+     "kind": "relational",
+     "tier": 2,
+     "text": "Cross-checking the clue linking B and A (col_offset) removes 1 candidate(s).",
+     "removed": 1
+    },
+    {
+     "kind": "single",
+     "tier": 1,
+     "text": "Only one square is still possible for B: r6c5. Row 6 and column 5 are now closed to everyone else.",
+     "removed": 10,
+     "placed": [
+      "B",
+      34
+     ]
+    },
+    {
+     "kind": "tagshare",
+     "tier": 2,
+     "text": "C shared an area with someone beside a barrel, so areas where that is no longer possible are ruled out (6 candidate(s) cleared).",
+     "removed": 6
+    },
+    {
+     "kind": "line",
+     "tier": 1,
+     "text": "V is the only person who can be in column 1, and every column holds someone — so V is there.",
+     "removed": 5
+    },
+    {
+     "kind": "line",
+     "tier": 1,
+     "text": "E is the only person who can be in column 2, and every column holds someone — so E is there.",
+     "removed": 3
+    },
+    {
+     "kind": "single",
+     "tier": 1,
+     "text": "Only one square is still possible for E: r5c2. Row 5 and column 2 are now closed to everyone else.",
+     "removed": 2,
+     "placed": [
+      "E",
+      25
+     ]
+    },
+    {
+     "kind": "single",
+     "tier": 1,
+     "text": "Only one square is still possible for C: r3c3. Row 3 and column 3 are now closed to everyone else.",
+     "removed": 1,
+     "placed": [
+      "C",
+      14
+     ]
+    },
+    {
+     "kind": "verdict",
+     "tier": 1,
+     "text": "V is at r2c1.",
+     "removed": 0,
+     "placed": [
+      "V",
+      6
+     ]
+    }
+   ]
+  },
+  "meta": {
+   "quality_version": "scene-design-v1",
+   "implied_atoms_removed": 0,
+   "scene_spec": {
+    "schema": "murdoku.scene_spec/1",
+    "anchors_per_area": {},
+    "blocker_rate": 0.2,
+    "furniture_rate": 0.16
+   }
+  }
+ },
+ "murdoku_theme": {
+  "theme_id": "library-51658e84",
+  "title": "Marginalia",
+  "names": {
+   "A": "Ada Ashworth",
+   "B": "Basil Blackwood",
+   "C": "Cleo Carrow",
+   "D": "Dorian Dale",
+   "E": "Esme Elwood",
+   "V": "Valentina Vane"
+  },
+  "pronouns": {
+   "A": "she",
+   "B": "he",
+   "C": "she",
+   "D": "he",
+   "E": "she",
+   "V": "she"
+  },
+  "areas": [
+   "Music School",
+   "Reading Room",
+   "Observatory"
+  ],
+  "objects": {
+   "chair": "leather armchair",
+   "carpet": "faded rug",
+   "shelf": "bookcase",
+   "plant": "aspidistra",
+   "statue": "globe",
+   "piano": "practice piano",
+   "boulder": "telescope",
+   "barrel": "umbrella stand"
+  },
+  "tags": {},
+  "victim_note": "was found dead",
+  "blurb": "The bell has rung for dinner. One scholar is still among the books, and will be for ever.",
+  "assets": {},
+  "setting_id": "library",
+  "visual": {
+   "accent": "#7d2a2e",
+   "finishes": [
+    "parquet",
+    "herringbone",
+    "planks",
+    "carpet",
+    "flagstone",
+    "boards",
+    "paving",
+    "lawn"
+   ],
+   "wallpapers": [
+    "book_wall",
+    "oak_panel",
+    "gothic_window",
+    "crimson"
+   ],
+   "variants": {
+    "carpet": [
+     "plum",
+     "rose",
+     "sage"
+    ],
+    "planks": [
+     "walnut",
+     "oak"
+    ]
+   },
+   "frame": "library",
+   "skins": {
+    "bed": "chesterfield",
+    "chair": "leather_armchair",
+    "car": "book_trolley",
+    "table": "reading_table",
+    "tv": "grandfather_clock",
+    "crate": "card_catalogue",
+    "box": "book_stack",
+    "register": "circulation_desk",
+    "bear": "owl",
+    "statue": "globe",
+    "boulder": "telescope",
+    "barrel": "umbrella_stand"
+   },
+   "setting": "library",
+   "area_finishes": {
+    "0": "herringbone",
+    "1": "parquet",
+    "2": "planks"
+   },
+   "area_wallpapers": {
+    "0": "oak_panel",
+    "1": "book_wall",
+    "2": "gothic_window"
+   }
+  }
+ }
+}
